@@ -1,53 +1,72 @@
-[
+﻿[
   {
-    "outputFileName": "static/css/login.min.css",
+    "outputFileName": "../dist/css/login.min.css",
     "inputFiles": [
-      "static/css/login.css"
+      "css/login.css"
     ]
   },
   {
-    "outputFileName": "static/js/login.min.js",
+    "outputFileName": "../dist/js/login.min.js",
     "inputFiles": [
-      "static/libs/jquery.min.js",
-      "static/libs/jquery.md5.js",
-      "static/js/core.js",
-      "static/js/login.js"
+      "libs/jquery.min.js",
+      "libs/jquery.md5.js",
+      "js/ajax.js",
+      "js/user.js",
+      "js/login.js"
     ]
   },
   {
-    "outputFileName": "static/css/index.min.css",
+    "outputFileName": "../dist/css/index.min.css",
     "inputFiles": [
-      "static/libs/font-awesome/css/font-awesome.min.css",
-      "static/libs/miniui/miniui.css",
-      "static/css/index.css"
+      "css/font-awesome.min.css",
+      "css/miniui.css",
+      "css/index.css"
     ]
   },
   {
-    "outputFileName": "static/js/index.min.js",
+    "outputFileName": "../dist/js/index.min.js",
     "inputFiles": [
-      "static/libs/jquery.min.js",
-      "static/libs/miniui/miniui.js",
-      "static/js/core.js",
-      "static/js/index.js"
+      "libs/jquery.min.js",
+      "libs/jquery.miniui.js",
+      "js/ajax.js",
+      "js/user.js",
+      "js/code.js",
+      "js/message.js",
+      "js/dialog.js",
+      "js/toolbar.js",
+      "js/index.js"
     ]
   },
   {
-    "outputFileName": "static/css/frame.min.css",
+    "outputFileName": "../dist/css/frame.min.css",
     "inputFiles": [
-      "static/libs/font-awesome/css/font-awesome.min.css",
-      "static/libs/miniui/miniui.css",
-      "static/css/frame.css"
+      "css/font-awesome.min.css",
+      "css/miniui.css",
+      "css/frame.css"
     ]
   },
   {
-    "outputFileName": "static/js/frame.min.js",
+    "outputFileName": "../dist/js/frame.min.js",
     "inputFiles": [
-      "static/libs/jquery.min.js",
-      "static/libs/pdfobject.min.js",
-      "static/libs/miniui/miniui.js",
-      "static/libs/highcharts/highcharts.js",
-      "static/js/core.js",
-      "static/js/frame.js"
+      "libs/jquery.min.js",
+      "libs/pdfobject.min.js",
+      "libs/jquery.miniui.js",
+      "libs/highcharts/highcharts.js",
+      "js/string.js",
+      "js/array.js",
+      "js/date.js",
+      "js/jqext.js",
+      "js/url.js",
+      "js/ajax.js",
+      "js/user.js",
+      "js/code.js",
+      "js/message.js",
+      "js/dialog.js",
+      "js/toolbar.js",
+      "js/grid.js",
+      "js/form.js",
+      "js/columnsMenu.js",
+      "js/frame.js"
     ]
   }
 ]
