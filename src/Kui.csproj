@@ -57,8 +57,8 @@
       <DependentUpon>index.css</DependentUpon>
     </Content>
     <Content Include="demo\css\login.css" />
-    <Content Include="data\icon.txt" />
-    <Content Include="data\menu.txt" />
+    <Content Include="demo\data\icon.txt" />
+    <None Include="demo\data\menu.json" />
     <Content Include="demo\css\login.min.css">
       <DependentUpon>login.css</DependentUpon>
     </Content>
