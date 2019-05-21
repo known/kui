@@ -1,6 +1,6 @@
 ﻿[
   {
-    "outputFileName": "dist/css/kui.min.css",
+    "outputFileName": "src/css/kui.min.css",
     "inputFiles": [
       "src/css/font-awesome.css",
       "src/css/miniui.css",
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "outputFileName": "dist/js/kui.min.js",
+    "outputFileName": "src/js/kui.min.js",
     "inputFiles": [
       "src/libs/pdfobject.js",
       "src/libs/miniui.js",
@@ -41,14 +41,14 @@
     "inputFiles": [
       "libs/jquery.min.js",
       "libs/jquery.md5.js",
-      "dist/js/kui.min.js",
+      "src/js/kui.min.js",
       "demo/js/login.js"
     ]
   },
   {
     "outputFileName": "demo/css/index.min.css",
     "inputFiles": [
-      "dist/css/kui.min.css",
+      "src/css/kui.min.css",
       "demo/css/index.css"
     ]
   },
@@ -56,14 +56,14 @@
     "outputFileName": "demo/js/index.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
-      "dist/js/kui.min.js",
+      "src/js/kui.min.js",
       "demo/js/index.js"
     ]
   },
   {
     "outputFileName": "demo/css/frame.min.css",
     "inputFiles": [
-      "dist/css/kui.min.css",
+      "src/css/kui.min.css",
       "demo/css/frame.css"
     ]
   },
@@ -71,7 +71,7 @@
     "outputFileName": "demo/js/frame.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
-      "dist/js/kui.min.js",
+      "src/js/kui.min.js",
       "demo/js/frame.js"
     ]
   }

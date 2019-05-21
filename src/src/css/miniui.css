@@ -165,7 +165,7 @@ body .mini-fixed {
 
 .mini-mask-loading {
     padding: 10px 8px 10px 30px;
-    background: #fff url(images/grid/loading.gif) no-repeat scroll 5px 50%;
+    background: #fff url(../images/grid/loading.gif) no-repeat scroll 5px 50%;
     border: 2px solid #517fad;
 }
 
@@ -190,39 +190,39 @@ body .mini-fixed {
     }
 
 .mini-tools-close {
-    background: url(images/tools/close.gif) no-repeat 50% 1px;
+    background: url(../images/tools/close.gif) no-repeat 50% 1px;
     _background-position: 50% 3px;
 }
 
 .mini-tools .mini-tools-collapse {
-    background: url(images/tools/collapse.gif) no-repeat 50% 50%;
+    background: url(../images/tools/collapse.gif) no-repeat 50% 50%;
     width: 13px;
     _background-position: 50% 3px;
 }
 
 .mini-tools .mini-tools-expand {
-    background: url(images/tools/expand.gif) no-repeat 50% 50%;
+    background: url(../images/tools/expand.gif) no-repeat 50% 50%;
     width: 13px;
     _background-position: 50% 3px;
 }
 
 .mini-tools-max {
-    background: url(images/tools/max.gif) no-repeat 50% 50%;
+    background: url(../images/tools/max.gif) no-repeat 50% 50%;
     _background-position: 50% 3px;
 }
 
 .mini-tools-min {
-    background: url(images/tools/min.gif) no-repeat 50% 50%;
+    background: url(../images/tools/min.gif) no-repeat 50% 50%;
     _background-position: 50% 3px;
 }
 
 .mini-tools-restore {
-    background: url(images/tools/restore.gif) no-repeat 50% 50%;
+    background: url(../images/tools/restore.gif) no-repeat 50% 50%;
     _background-position: 50% 3px;
 }
 
 .mini-tools-refresh {
-    background: url(images/tools/refresh.gif) no-repeat 50% 50%;
+    background: url(../images/tools/refresh.gif) no-repeat 50% 50%;
     _background-position: 50% 3px;
 }
 
@@ -308,23 +308,23 @@ body .mini-pager a:hover.mini-button-disabled {
 }
 
 .mini-feedback-add {
-    background-image: url(images/dragdrop/drop-add.gif);
+    background-image: url(../images/dragdrop/drop-add.gif);
 }
 
 .mini-feedback-before {
-    background-image: url(images/dragdrop/drop-over.gif);
+    background-image: url(../images/dragdrop/drop-over.gif);
 }
 
 .mini-feedback-after {
-    background-image: url(images/dragdrop/drop-under.gif);
+    background-image: url(../images/dragdrop/drop-under.gif);
 }
 
 .mini-feedback-no {
-    background-image: url(images/dragdrop/drop-no.gif);
+    background-image: url(../images/dragdrop/drop-no.gif);
 }
 
 .mini-feedback-yes {
-    background-image: url(images/dragdrop/drop-yes.gif);
+    background-image: url(../images/dragdrop/drop-yes.gif);
 }
 
 .mini-supergrid-feedback-add .mini-supertree-nodetext {
@@ -353,7 +353,7 @@ body .mini-tree-feedback-add .mini-treegrid-nodeshow {
     bottom: 1px;
     overflow: hidden;
     cursor: se-resize;
-    background: url(images/panel/resize.gif) no-repeat right bottom;
+    background: url(../images/panel/resize.gif) no-repeat right bottom;
 }
 
 .mini-resizer-proxy {
@@ -424,7 +424,7 @@ body .mini-buttonedit * {
     }
 
 .mini-errorIcon {
-    background: url(images/error.gif) no-repeat 50% 50%;
+    background: url(../images/error.gif) no-repeat 50% 50%;
     width: 14px;
     height: 16px;
     overflow: hidden;
@@ -869,12 +869,12 @@ body .mini-button-disabled * {
 }
 
 .mini-button-menu {
-    background: url(images/button/menu_arrow.png) no-repeat 0px 50%;
+    background: url(../images/button/menu_arrow.png) no-repeat 0px 50%;
 }
 
 .mini-button-split {
     width: 18px;
-    background: url(images/button/split_arrow.png) no-repeat 0px 50%;
+    background: url(../images/button/split_arrow.png) no-repeat 0px 50%;
 }
 
 .mini-checkbox {
@@ -895,7 +895,7 @@ body .mini-button-disabled * {
     width: 13px;
     height: 13px;
     display: inline-block;
-    background: url(images/icons/checkbox.gif) no-repeat 0 0;
+    background: url(../images/icons/checkbox.gif) no-repeat 0 0;
     overflow: hidden;
     cursor: pointer;
 }
@@ -1098,7 +1098,7 @@ body .mini-invalid .mini-buttonedit-border {
 
 .mini-buttonedit-close {
     display: none;
-    background: url(images/buttonedit/close.gif) no-repeat 50% 50%;
+    background: url(../images/buttonedit/close.gif) no-repeat 50% 50%;
     width: 14px;
 }
 
@@ -1174,7 +1174,7 @@ body .mini-buttonedit-disabled .mini-buttonedit-down {
     width: 15px;
     height: 15px;
     overflow: hidden;
-    background: url(images/buttonedit/icon1.gif) no-repeat 50% 50%;
+    background: url(../images/buttonedit/icon1.gif) no-repeat 50% 50%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1187,11 +1187,11 @@ body .mini-buttonedit-disabled .mini-buttonedit-down {
 }
 
 .mini-popupedit .mini-buttonedit-trigger .mini-buttonedit-icon {
-    background: url(images/buttonedit/icon2.gif) no-repeat 3px 1px;
+    background: url(../images/buttonedit/icon2.gif) no-repeat 3px 1px;
 }
 
 .mini-datepicker .mini-buttonedit-trigger .mini-buttonedit-icon {
-    background: url(images/date.gif) no-repeat 50% 2px;
+    background: url(../images/date.gif) no-repeat 50% 2px;
 }
 
 .mini-autocomplete .mini-buttonedit-trigger .mini-buttonedit-icon {
@@ -1207,7 +1207,7 @@ body .mini-buttonedit-disabled .mini-buttonedit-down {
 }
 
     .mini-buttonedit-up span, .mini-buttonedit-down span {
-        background: url(images/buttonedit/up.gif) no-repeat 50% 3px;
+        background: url(../images/buttonedit/up.gif) no-repeat 50% 3px;
         width: 16px;
         height: 100%;
         overflow: hidden;
@@ -1216,7 +1216,7 @@ body .mini-buttonedit-disabled .mini-buttonedit-down {
     }
 
     .mini-buttonedit-down span {
-        background: url(images/buttonedit/down.gif) no-repeat 50% 3px;
+        background: url(../images/buttonedit/down.gif) no-repeat 50% 3px;
     }
 
 .mini-buttonedit-button .mini-buttonedit-button-pressed {
@@ -1225,7 +1225,7 @@ body .mini-buttonedit-disabled .mini-buttonedit-down {
 
 
 .mini-filteredit .mini-buttonedit-icon {
-    background: url(images/buttonedit/filter.png) no-repeat 50% 0px;
+    background: url(../images/buttonedit/filter.png) no-repeat 50% 0px;
 }
 
 
@@ -1356,7 +1356,7 @@ input.mini-textarea {
 }
 
 .mini-panel-collapse .mini-tools-collapse {
-    background: url(images/tools/expand.gif) no-repeat 50% 50%;
+    background: url(../images/tools/expand.gif) no-repeat 50% 50%;
     _background-position: 50% 3px;
 }
 
@@ -1427,25 +1427,25 @@ input.mini-textarea {
 .mini-messagebox-waiting {
     width: 40px;
     height: 40px;
-    background: url(images/messagebox/icon-info.gif) no-repeat 50% 50%;
+    background: url(../images/messagebox/icon-info.gif) no-repeat 50% 50%;
 }
 
 .mini-messagebox-warning {
-    background: url(images/messagebox/icon-warning.gif) no-repeat 50% 50%;
+    background: url(../images/messagebox/icon-warning.gif) no-repeat 50% 50%;
 }
 
 .mini-messagebox-question {
-    background: url(images/messagebox/icon-question.gif) no-repeat 50% 50%;
+    background: url(../images/messagebox/icon-question.gif) no-repeat 50% 50%;
 }
 
 .mini-messagebox-error {
-    background: url(images/messagebox/icon-error.gif) no-repeat 50% 50%;
+    background: url(../images/messagebox/icon-error.gif) no-repeat 50% 50%;
 }
 
 .mini-messagebox-waiting {
     width: 40px;
     height: 30px;
-    background: url(images/messagebox/loading.gif) no-repeat 50% 50%;
+    background: url(../images/messagebox/loading.gif) no-repeat 50% 50%;
 }
 
 .mini-messagebox-input {
@@ -1471,7 +1471,7 @@ input.mini-textarea {
 
 .mini-outlookbar-groupHeader {
     position: relative;
-    background: #edf1f5 url(images/navbar/header.png) repeat-x 0 0;
+    background: #edf1f5 url(../images/navbar/header.png) repeat-x 0 0;
     cursor: pointer;
     overflow: hidden;
     line-height: 16px;
@@ -1528,7 +1528,7 @@ input.mini-textarea {
     }
 
 .mini-outlookbar .mini-outlookbar-expand .mini-tools-collapse {
-    background: url(images/tools/expand.gif) no-repeat 50% 50%;
+    background: url(../images/tools/expand.gif) no-repeat 50% 50%;
 }
 
 .mini-outlookbar-collapse {
@@ -1738,7 +1738,7 @@ body .mini-tabs-position-bottom .mini-tabs-plain .mini-tabs-scrollCt {
     }
 
 .mini-tab {
-    /*background: #EBEBEE url(images/tabs/tab.png) repeat-x 0 0;
+    /*background: #EBEBEE url(../images/tabs/tab.png) repeat-x 0 0;
     color: #201F35;
     border: 1px solid #ddd;*/
     color: black;
@@ -1749,7 +1749,7 @@ body .mini-tabs-position-bottom .mini-tabs-plain .mini-tabs-scrollCt {
 }
 
 .mini-tab-hover {
-    /*background: #E1E8FD url(images/tabs/hover.png) repeat-x 0 0;*/
+    /*background: #E1E8FD url(../images/tabs/hover.png) repeat-x 0 0;*/
 }
 
 .mini-tab-active {
@@ -1800,7 +1800,7 @@ body .mini-tabs-position-bottom .mini-tabs-plain .mini-tabs-scrollCt {
     height: 13px;
     vertical-align: top;
     margin-top: 2px;
-    background: url(images/tabs/close.gif) no-repeat 3px 3px;
+    background: url(../images/tabs/close.gif) no-repeat 3px 3px;
     cursor: pointer;
     opacity: .6;
     filter: alpha(opacity=60);
@@ -2005,7 +2005,7 @@ body .mini-tabs-position-bottom .mini-tabs-plain .mini-tabs-scrollCt {
 }
 
 .mini-tabs-tabmenu {
-    background: #ebebee url(images/tabs/down.gif) no-repeat 50% 50%;
+    background: #ebebee url(../images/tabs/down.gif) no-repeat 50% 50%;
     display: none;
     min-width: 16px;
     min-height: 16px;
@@ -2017,7 +2017,7 @@ body .mini-tabs-position-bottom .mini-tabs-plain .mini-tabs-scrollCt {
 
 .mini-tabs-leftButton, .mini-tabs-rightButton {
     border: solid 1px #ddd;
-    background: #EBEBEE url(images/tabs/allow_left.gif) no-repeat 50% 50%;
+    background: #EBEBEE url(../images/tabs/allow_left.gif) no-repeat 50% 50%;
     min-width: 16px;
     min-height: 16px;
     cursor: pointer;
@@ -2027,7 +2027,7 @@ body .mini-tabs-position-bottom .mini-tabs-plain .mini-tabs-scrollCt {
 }
 
 .mini-tabs-rightButton {
-    background: #EBEBEE url(images/tabs/allow_right.gif) no-repeat 50% 50%;
+    background: #EBEBEE url(../images/tabs/allow_right.gif) no-repeat 50% 50%;
 }
 
 a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
@@ -2119,7 +2119,7 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
     width: 100%;
     height: 18px;
     display: block;
-    background: url(images/splitter/resize.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/resize.gif) no-repeat 50% 50%;
 }
 
 .mini-splitter-pane1-button, .mini-splitter-pane2-button {
@@ -2127,12 +2127,12 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
     width: 100%;
     height: 35px;
     display: block;
-    background: url(images/splitter/mini-left.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-left.gif) no-repeat 50% 50%;
     cursor: pointer;
 }
 
 .mini-splitter-pane2-button {
-    background: url(images/splitter/mini-right.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-right.gif) no-repeat 50% 50%;
 }
 
 .mini-splitter-pane1-vertical {
@@ -2166,18 +2166,18 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
         height: 5px;
         zoom: 1;
         float: left;
-        background: url(images/splitter/mini-top.gif) no-repeat 0px 0px;
+        background: url(../images/splitter/mini-top.gif) no-repeat 0px 0px;
     }
 
     .mini-splitter-handler-vertical .mini-splitter-pane2-button {
-        background: url(images/splitter/mini-bottom.gif) no-repeat 0px 0px;
+        background: url(../images/splitter/mini-bottom.gif) no-repeat 0px 0px;
     }
 
     .mini-splitter-handler-vertical .mini-splitter-resize-button {
         display: inline-block;
         width: 18px;
         height: 5px;
-        background: url(images/splitter/resize_h.gif) no-repeat 50% 50%;
+        background: url(../images/splitter/resize_h.gif) no-repeat 50% 50%;
     }
 
 .mini-layout {
@@ -2246,7 +2246,7 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
 .mini-layout-region-header {
     font-weight: bold;
     line-height: 26px;
-    background: #edf1f5 url(images/layout/header.png) repeat-x 0 0;
+    background: #edf1f5 url(../images/layout/header.png) repeat-x 0 0;
     border-bottom: solid 1px #ddd;
     cursor: default;
     overflow: hidden;
@@ -2316,35 +2316,35 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
 }
 
 .mini-layout-region-west .mini-layout-region-header .mini-tools-collapse {
-    background: url(images/layout/west.gif) no-repeat 50% 50%;
+    background: url(../images/layout/west.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-region-east .mini-layout-region-header .mini-tools-collapse {
-    background: url(images/layout/east.gif) no-repeat 50% 50%;
+    background: url(../images/layout/east.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-region-north .mini-layout-region-header .mini-tools-collapse {
-    background: url(images/layout/north.gif) no-repeat 50% 50%;
+    background: url(../images/layout/north.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-region-south .mini-layout-region-header .mini-tools-collapse {
-    background: url(images/layout/south.gif) no-repeat 50% 50%;
+    background: url(../images/layout/south.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-proxy-west .mini-tools-collapse {
-    background: url(images/layout/east.gif) no-repeat 50% 50%;
+    background: url(../images/layout/east.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-proxy-east .mini-tools-collapse {
-    background: url(images/layout/west.gif) no-repeat 50% 50%;
+    background: url(../images/layout/west.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-proxy-north .mini-tools-collapse {
-    background: url(images/layout/south.gif) no-repeat 50% 50%;
+    background: url(../images/layout/south.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-proxy-south .mini-tools-collapse {
-    background: url(images/layout/north.gif) no-repeat 50% 50%;
+    background: url(../images/layout/north.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-popup {
@@ -2359,7 +2359,7 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
 .mini-layout-spliticon {
     width: 5px;
     height: 35px;
-    background: url(images/splitter/mini-left.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-left.gif) no-repeat 50% 50%;
     position: absolute;
     left: 0;
     top: 50%;
@@ -2368,7 +2368,7 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
 }
 
 .mini-layout-split-east .mini-layout-spliticon {
-    background: url(images/splitter/mini-right.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-right.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-split-north .mini-layout-spliticon,
@@ -2379,28 +2379,28 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
     top: 0;
     margin-left: -17px;
     margin-top: 0px;
-    background: url(images/splitter/mini-top.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-top.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-split-south .mini-layout-spliticon {
-    background: url(images/splitter/mini-bottom.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-bottom.gif) no-repeat 50% 50%;
 }
 
 
 .mini-layout-split-west .mini-layout-spliticon-collapse {
-    background: url(images/splitter/mini-right.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-right.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-split-east .mini-layout-spliticon-collapse {
-    background: url(images/splitter/mini-left.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-left.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-split-north .mini-layout-spliticon-collapse {
-    background: url(images/splitter/mini-bottom.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-bottom.gif) no-repeat 50% 50%;
 }
 
 .mini-layout-split-south .mini-layout-spliticon-collapse {
-    background: url(images/splitter/mini-top.gif) no-repeat 50% 50%;
+    background: url(../images/splitter/mini-top.gif) no-repeat 50% 50%;
 }
 
 
@@ -2439,11 +2439,11 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
     height: 9px;
     overflow: hidden;
     display: none;
-    background: url(images/menu/top-arrow.gif) no-repeat 50% 2px;
+    background: url(../images/menu/top-arrow.gif) no-repeat 50% 2px;
 }
 
 .mini-menu-bottomArrow {
-    background: url(images/menu/bottom-arrow.gif) no-repeat 50% 2px;
+    background: url(../images/menu/bottom-arrow.gif) no-repeat 50% 2px;
 }
 
 .mini-menu-float {
@@ -2557,7 +2557,7 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
 .mini-menuitem-allow {
     left: auto;
     right: 3px;
-    background: url(images/menu/arrow.png) no-repeat 8px 50%;
+    background: url(../images/menu/arrow.png) no-repeat 8px 50%;
 }
 
 .mini-menu .mini-menuitem-showcheck .mini-menuitem-icon {
@@ -2565,7 +2565,7 @@ a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton {
 }
 
 .mini-menu .mini-menuitem-checked .mini-menuitem-icon {
-    background: url(images/menu/checked.gif) no-repeat 50% 6px;
+    background: url(../images/menu/checked.gif) no-repeat 50% 6px;
 }
 
 body .mini-menuitem-icontop .mini-menuitem-inner {
@@ -2592,7 +2592,7 @@ body .mini-menuitem-icontop .mini-menuitem-text {
 
 
 .mini-menu-horizontal .mini-menu-border {
-    background: #F1F2F6 url(images/menu/hmenubg.png) repeat-x 0 0;
+    background: #F1F2F6 url(../images/menu/hmenubg.png) repeat-x 0 0;
 }
 
 .mini-menu-horizontal .mini-menu-inner {
@@ -2630,7 +2630,7 @@ body .mini-menuitem-icontop .mini-menuitem-text {
 }
 
 .mini-menu-horizontal .mini-menuitem-allow {
-    background: url(images/menu/hallow.gif) no-repeat 50% 50%;
+    background: url(../images/menu/hallow.gif) no-repeat 50% 50%;
     background-position: 50% 20%;
     width: 10px;
     height: 8px;
@@ -2692,13 +2692,13 @@ body .mini-menuitem-icontop .mini-menuitem-text {
     width: 17px;
     height: 20px;
     z-index: 1000;
-    background: url("images/tabs/allow_left.gif") no-repeat scroll -1px 50%;
+    background: url("../images/tabs/allow_left.gif") no-repeat scroll -1px 50%;
 }
 
 .mini-menu-overflow .mini-menu-bottomArrow {
     left: auto;
     right: 0;
-    background: url("images/tabs/allow_right.gif") no-repeat scroll -1px 50%;
+    background: url("../images/tabs/allow_right.gif") no-repeat scroll -1px 50%;
 }
 
 .mini-calendar {
@@ -2776,7 +2776,7 @@ body .mini-calendar td {
 .mini-calendar-header {
     height: 25px;
     text-align: center;
-    background: #E7EBEF url(images/calendar/header.png) repeat-x 0 0;
+    background: #E7EBEF url(../images/calendar/header.png) repeat-x 0 0;
     border-bottom: solid 1px #ddd;
 }
 
@@ -2813,23 +2813,23 @@ body .mini-calendar td {
     width: 11px;
     height: 12px;
     overflow: hidden;
-    background: url(images/calendar/prev.gif) no-repeat 50% 3px;
+    background: url(../images/calendar/prev.gif) no-repeat 50% 3px;
 }
 
 .mini-calendar-yearNext {
     margin: 0;
     margin-left: 8px;
-    background: url(images/calendar/next.gif) no-repeat 50% 3px;
+    background: url(../images/calendar/next.gif) no-repeat 50% 3px;
 }
 
 .mini-calendar-monthPrev {
-    background: url(images/calendar/months.gif) no-repeat 0 0;
+    background: url(../images/calendar/months.gif) no-repeat 0 0;
 }
 
 .mini-calendar-monthNext {
     margin: 0;
     margin-left: 8px;
-    background: url(images/calendar/months.gif) no-repeat right 0;
+    background: url(../images/calendar/months.gif) no-repeat right 0;
 }
 
 .mini-calendar-footer {
@@ -2857,7 +2857,7 @@ body .mini-calendar td {
 .mini-calendar-tadayButton, .mini-calendar-clearButton,
 .mini-calendar-okButton, .mini-calendar-cancelButton {
     border: 1px solid #A9ACB5;
-    background: #EBEDF2 url(images/calendar/button.png) repeat-x 0 0;
+    background: #EBEDF2 url(../images/calendar/button.png) repeat-x 0 0;
     color: #201F35;
     display: inline-block;
     text-decoration: none;
@@ -2967,13 +2967,13 @@ a:hover.mini-calendar-menu-year {
     width: 14px;
     height: 15px;
     cursor: pointer;
-    background: url(images/calendar/months.gif) no-repeat 0 50%;
+    background: url(../images/calendar/months.gif) no-repeat 0 50%;
 }
 
 .mini-calendar-menu-nextYear {
     left: auto;
     right: 0;
-    background: url(images/calendar/months.gif) no-repeat right 50%;
+    background: url(../images/calendar/months.gif) no-repeat right 50%;
 }
 
 .mini-calendar-menu-selected, a:hover.mini-calendar-menu-selected {
@@ -3162,12 +3162,12 @@ a:hover.mini-calendar-menu-year {
     width: 13px;
     height: 13px;
     display: inline-block;
-    background: url(images/icons/checkbox.gif) no-repeat 0 0;
+    background: url(../images/icons/checkbox.gif) no-repeat 0 0;
     cursor: pointer;
 }
 
 .mini-radiobuttonlist-item .mini-list-icon {
-    background: url(images/icons/radio.gif) no-repeat 0 0;
+    background: url(../images/icons/radio.gif) no-repeat 0 0;
 }
 
 .mini-checkboxlist-item-selected .mini-list-icon,
@@ -3331,7 +3331,7 @@ a:hover.mini-calendar-menu-year {
 .mini-tooltip-loading {
     width: 16px;
     height: 16px;
-    background: url(images/tooltip/wait.gif) no-repeat 50% 50%;
+    background: url(../images/tooltip/wait.gif) no-repeat 50% 50%;
 }
 
 
@@ -3510,7 +3510,7 @@ body .mini-grid-headerCell-nowrap {
 }
 
 .mini-grid-topRightCell {
-    background: #E7EBEF url(images/grid/header.png) repeat-x 0 0;
+    background: #E7EBEF url(../images/grid/header.png) repeat-x 0 0;
     border-right: #A5ACB5 1px solid;
     border-bottom: #A5ACB5 1px solid;
     position: absolute;
@@ -3539,7 +3539,7 @@ body .mini-grid .mini-grid-cell-error {
 }
 
 .mini-grid-cell-dirty {
-    background: url(images/grid/dirty.gif) no-repeat right 4px;
+    background: url(../images/grid/dirty.gif) no-repeat right 4px;
 }
 
 body .mini-grid-deleteRow {
@@ -3593,12 +3593,12 @@ body .mini-grid-deleteRow {
     left: 0px;
     top: 4px;
     cursor: pointer;
-    background: url("images/grid/expand.gif") no-repeat scroll 4px 0px;
+    background: url("../images/grid/expand.gif") no-repeat scroll 4px 0px;
 }
 
 
 .mini-grid-group-collapse .mini-grid-group-ecicon {
-    background: url("images/grid/collapse.gif") no-repeat 3px 0px;
+    background: url("../images/grid/collapse.gif") no-repeat 3px 0px;
 }
 
 .mini-grid-groupHeader-collapsible {
@@ -3816,7 +3816,7 @@ body .mini-grid-row-hover {
     display: inline-block;
     margin-left: 2px;
     margin-right: 2px;
-    background: url(images/grid/icons.png) no-repeat -19px -18px;
+    background: url(../images/grid/icons.png) no-repeat -19px -18px;
 }
 
 .mini-grid-asc .mini-grid-sortIcon {
@@ -3833,7 +3833,7 @@ body .mini-grid-row-hover {
 }
 
 .mini-grid-allowsort {
-    background: url("images/grid/sorticon.gif") no-repeat 50% 50%;
+    background: url("../images/grid/sorticon.gif") no-repeat 50% 50%;
     display: inline-block;
     height: 10px;
     margin-left: 2px;
@@ -3873,11 +3873,11 @@ body .mini-grid-row-hover {
     line-height: 20px;
     background: no-repeat 50% 50%;
     outline: none;
-    background-image: url(images/tree/collapse.gif);
+    background-image: url(../images/tree/collapse.gif);
 }
 
 .mini-grid-expandRow .mini-grid-ecIcon {
-    background-image: url(images/tree/expand.gif);
+    background-image: url(../images/tree/expand.gif);
     background-position: 2px 50%;
 }
 
@@ -3906,7 +3906,7 @@ body .mini-grid-row-hover {
     padding-top: 0;
     padding-bottom: 0;
     z-index: 1000000;
-    background: #E7EBEF url(images/grid/header.png) repeat-x 0 0;
+    background: #E7EBEF url(../images/grid/header.png) repeat-x 0 0;
     border: #A5ACB5 1px solid;
     width: 100px;
 }
@@ -3916,23 +3916,23 @@ body .mini-grid-row-hover {
     overflow: hidden;
     width: 9px;
     height: 9px;
-    background: url(images/grid/col-move-top.gif) no-repeat;
+    background: url(../images/grid/col-move-top.gif) no-repeat;
     display: none;
     z-index: 100000;
 }
 
 .mini-grid-movebottom {
-    background: url(images/grid/col-move-bottom.gif) no-repeat;
+    background: url(../images/grid/col-move-bottom.gif) no-repeat;
 }
 
 .mini-grid-no .mini-grid-columnproxy-inner {
     padding-left: 20px;
-    background: url(images/grid/no.gif) no-repeat 0 6px;
+    background: url(../images/grid/no.gif) no-repeat 0 6px;
 }
 
 .mini-grid-ok .mini-grid-columnproxy-inner {
     padding-left: 20px;
-    background: url(images/grid/ok.gif) no-repeat 0 6px;
+    background: url(../images/grid/ok.gif) no-repeat 0 6px;
 }
 
 
@@ -3974,21 +3974,21 @@ body .mini-grid-row-hover {
 }
 
 .mini-grid-checkbox {
-    background: url(images/icons/checkbox.gif) no-repeat 0 0;
+    background: url(../images/icons/checkbox.gif) no-repeat 0 0;
 }
 
 .mini-grid-checkbox-checked,
 .mini-grid-row-selected .mini-checkcolumn .mini-grid-checkbox {
-    background: url(images/icons/checkbox.gif) no-repeat 0 -13px;
+    background: url(../images/icons/checkbox.gif) no-repeat 0 -13px;
 }
 
 .mini-grid-radio {
-    background: url(images/icons/radio.gif) no-repeat 0 0;
+    background: url(../images/icons/radio.gif) no-repeat 0 0;
 }
 
 .mini-grid-radio-checked,
 .mini-grid-row-selected .mini-checkcolumn .mini-grid-radio {
-    background: url(images/icons/radio.gif) no-repeat 0 -13px;
+    background: url(../images/icons/radio.gif) no-repeat 0 -13px;
 }
 
 
@@ -4100,24 +4100,24 @@ body .mini-grid-row-hover {
 }
 
 .mini-tree-collapse .mini-tree-node-ecicon {
-    background-image: url(images/tree/collapse.gif);
+    background-image: url(../images/tree/collapse.gif);
 }
 
 .mini-tree-expand .mini-tree-node-ecicon {
-    background-image: url(images/tree/expand.gif);
+    background-image: url(../images/tree/expand.gif);
     background-position: 3px 0px;
 }
 
 .mini-tree-leaf {
-    background-image: url(images/tree/leaf.gif);
+    background-image: url(../images/tree/leaf.gif);
 }
 
 .mini-tree-folder {
-    background-image: url(images/tree/folder.gif);
+    background-image: url(../images/tree/folder.gif);
 }
 
 .mini-tree-expand .mini-tree-folder {
-    background-image: url(images/tree/folder-open.gif);
+    background-image: url(../images/tree/folder-open.gif);
 }
 
 .mini-tree-checkbox {
@@ -4130,7 +4130,7 @@ body .mini-grid-row-hover {
 
 body .mini-tree .mini-tree-loading .mini-tree-node-ecicon,
 body .mini-tree-loading .mini-treegrid-ec-icon {
-    background: #fff url(images/tree/loading.gif) no-repeat scroll 50% 50%;
+    background: #fff url(../images/tree/loading.gif) no-repeat scroll 50% 50%;
 }
 
 
@@ -4153,7 +4153,7 @@ body .mini-tree-loading .mini-treegrid-ec-icon {
     padding-left: 1px;
     padding-right: 2px;
     /*border: 1px solid #A9ACB5;
-    background: #dde6fe url(images/tree/hover.png) repeat-x 0 0;*/
+    background: #dde6fe url(../images/tree/hover.png) repeat-x 0 0;*/
 }
 
 .mini-tree-selectedNode .mini-tree-nodeshow {
@@ -4161,7 +4161,7 @@ body .mini-tree-loading .mini-treegrid-ec-icon {
     padding-left: 1px;
     padding-right: 2px;
     /*border: 1px solid #A9ACB5;
-    background: #EBEDF2 url(images/tree/button.png) repeat-x 0 0;*/
+    background: #EBEDF2 url(../images/tree/button.png) repeat-x 0 0;*/
     zoom: 1;
 }
 
@@ -4207,65 +4207,65 @@ body .mini-tree-loading .mini-treegrid-ec-icon {
 
 
 .mini-tree-treeLine .mini-tree-indent {
-    background: transparent url(images/tree/treeline.gif) repeat-y 9px 0px;
+    background: transparent url(../images/tree/treeline.gif) repeat-y 9px 0px;
 }
 
 .mini-tree-treeLine .mini-tree-node-ecicon {
-    background: transparent url(images/tree/treeNodeLine.gif) no-repeat 1px -4px;
+    background: transparent url(../images/tree/treeNodeLine.gif) no-repeat 1px -4px;
 }
 
 .mini-tree-treeLine .mini-tree-expand .mini-tree-node-ecicon {
-    background: transparent url(images/tree/expandLine.gif) no-repeat 2px -1px;
+    background: transparent url(../images/tree/expandLine.gif) no-repeat 2px -1px;
 }
 
 .mini-tree-treeLine .mini-tree-collapse .mini-tree-node-ecicon {
-    background: transparent url(images/tree/collapseLine.gif) no-repeat 1px -1px;
+    background: transparent url(../images/tree/collapseLine.gif) no-repeat 1px -1px;
 }
 
 .mini-tree-treeLine .mini-tree-node-ecicon-last {
-    background: transparent url(images/tree/lastline.gif) no-repeat 2px -5px;
+    background: transparent url(../images/tree/lastline.gif) no-repeat 2px -5px;
 }
 
 
 .mini-tree-treeLine .mini-tree-expand .mini-tree-node-ecicon-first {
-    background: transparent url(images/tree/firstExpandNode.gif) no-repeat 2px 0;
+    background: transparent url(../images/tree/firstExpandNode.gif) no-repeat 2px 0;
 }
 
 .mini-tree-treeLine .mini-tree-expand .mini-tree-node-ecicon-last {
-    background: transparent url(images/tree/lastExpandNode.gif) no-repeat 2px -1px;
+    background: transparent url(../images/tree/lastExpandNode.gif) no-repeat 2px -1px;
 }
 
 .mini-tree-treeLine .mini-tree-collapse .mini-tree-node-ecicon-first {
-    background: transparent url(images/tree/firstCollapseNode.gif) no-repeat 1px 0;
+    background: transparent url(../images/tree/firstCollapseNode.gif) no-repeat 1px 0;
 }
 
 .mini-tree-treeLine .mini-tree-collapse .mini-tree-node-ecicon-last {
-    background: transparent url(images/tree/lastCollapseNode.gif) no-repeat 1px -1px;
+    background: transparent url(../images/tree/lastCollapseNode.gif) no-repeat 1px -1px;
 }
 
 
 .mini-tree-treeLine .mini-tree-expand .mini-tree-node-ecicon-firstLast {
-    background: transparent url(images/tree/expand.gif) no-repeat 1px 0;
+    background: transparent url(../images/tree/expand.gif) no-repeat 1px 0;
 }
 
 .mini-tree-treeLine .mini-tree-collapse .mini-tree-node-ecicon-firstLast {
-    background: transparent url(images/tree/collapse.gif) no-repeat 0px 0;
+    background: transparent url(../images/tree/collapse.gif) no-repeat 0px 0;
 }
 
 
 .mini-tree-treeLine .mini-tree-expand .mini-tree-node-ecicon-firstAndlast {
     background-position: 50% 70%;
-    background-image: url(images/tree/firstAndlastexpand.gif);
+    background-image: url(../images/tree/firstAndlastexpand.gif);
 }
 
 .mini-tree-treeLine .mini-tree-collapse .mini-tree-node-ecicon-firstAndlast {
     background-position: 50% 50%;
-    background-image: url(images/tree/firstAndlastcollapse.gif);
+    background-image: url(../images/tree/firstAndlastcollapse.gif);
 }
 
 .mini-tree-treeLine .mini-tree-node-ecicon-firstAndlast {
     background-position: 50% 50%;
-    background-image: url(images/tree/lastline.gif);
+    background-image: url(../images/tree/lastline.gif);
 }
 
 
@@ -4289,11 +4289,11 @@ body .mini-tree-loading .mini-treegrid-ec-icon {
 
 
 body .mini-tree-showArrows .mini-tree-collapse .mini-tree-node-ecicon {
-    background: url(images/tree/arrows.gif) no-repeat 0px 2px;
+    background: url(../images/tree/arrows.gif) no-repeat 0px 2px;
 }
 
 body .mini-tree-showArrows .mini-tree-expand .mini-tree-node-ecicon {
-    background: url(images/tree/arrows.gif) no-repeat -16px 2px;
+    background: url(../images/tree/arrows.gif) no-repeat -16px 2px;
 }
 
 body .mini-tree-showArrows .mini-tree-indent,
@@ -4332,11 +4332,11 @@ body .mini-tree-showArrows .mini-tree-node-ecicon {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     vertical-align: middle;
-    background-image: url(images/tree/radio_unchecked.gif);
+    background-image: url(../images/tree/radio_unchecked.gif);
 }
 
 .mini-tree-selectedNode .mini-tree-radio, .mini-grid-row-selected .mini-tree-radio {
-    background-image: url(images/tree/radio_checked.gif);
+    background-image: url(../images/tree/radio_checked.gif);
 }
 
 .mini-tree .mini-tree-checkbox,
@@ -4352,7 +4352,7 @@ body .mini-tree-showArrows .mini-tree-node-ecicon {
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    background: url(images/icons/checkbox.gif) no-repeat 0 0;
+    background: url(../images/icons/checkbox.gif) no-repeat 0 0;
     cursor: pointer;
     margin-left: 2px;
     margin-right: 1px;
@@ -4441,23 +4441,23 @@ body .mini-pager .mini-pager-num {
 }
 
 .mini-pager-first {
-    background: url(images/pager/first.gif) no-repeat;
+    background: url(../images/pager/first.gif) no-repeat;
 }
 
 .mini-pager-prev {
-    background-image: url(images/pager/prev.gif);
+    background-image: url(../images/pager/prev.gif);
 }
 
 .mini-pager-next {
-    background-image: url(images/pager/next.gif);
+    background-image: url(../images/pager/next.gif);
 }
 
 .mini-pager-last {
-    background-image: url(images/pager/last.gif);
+    background-image: url(../images/pager/last.gif);
 }
 
 .mini-pager-reload {
-    background-image: url(images/pager/reload.png);
+    background-image: url(../images/pager/reload.png);
 }
 
 .mini-page-buttons .mini-button,
@@ -4504,7 +4504,7 @@ body .mini-pager .mini-pager-num {
 .mini-htmlfile .mini-buttonedit-button {
     white-space: nowrap;
     border: 1px solid #A9ACB5;
-    background: #EBEDF2 url(images/buttonedit/button.png) repeat-x 0 0;
+    background: #EBEDF2 url(../images/buttonedit/button.png) repeat-x 0 0;
     color: #201F35;
     padding: 0;
     width: 50px;
@@ -4641,7 +4641,7 @@ body .mini-pager .mini-pager-num {
     width: 7px;
     height: 7px;
     font-size: 1px;
-    background: url(images/textboxlist/close.gif);
+    background: url(../images/textboxlist/close.gif);
     cursor: pointer;
 }
 
@@ -4656,14 +4656,14 @@ body .mini-pager .mini-pager-num {
 }
 
 .mini-textboxlist-popup-loading {
-    background: url(images/textboxlist/loading.gif) no-repeat 0 5px;
+    background: url(../images/textboxlist/loading.gif) no-repeat 0 5px;
     padding-left: 20px;
     line-height: 25px;
     display: block;
 }
 
 .mini-textboxlist-popup-error {
-    background: url(images/error.gif) no-repeat 0 5px;
+    background: url(../images/error.gif) no-repeat 0 5px;
     padding-left: 20px;
     line-height: 25px;
     display: block;
