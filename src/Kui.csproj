@@ -50,30 +50,49 @@
     <Content Include="bundleconfig.json" />
     <Content Include="css\dashboard.css" />
     <Content Include="css\frame.css" />
+    <Content Include="css\frame.min.css">
+      <DependentUpon>frame.css</DependentUpon>
+    </Content>
     <Content Include="css\index.css" />
+    <Content Include="css\index.min.css">
+      <DependentUpon>index.css</DependentUpon>
+    </Content>
     <Content Include="css\login.css" />
+    <Content Include="css\login.min.css">
+      <DependentUpon>login.css</DependentUpon>
+    </Content>
     <Content Include="data\icon.txt" />
+    <Content Include="data\menu.txt" />
     <Content Include="images\aiwrap.png" />
     <Content Include="images\face.jpg" />
     <Content Include="images\web_login_bg.jpg" />
-    <Content Include="js\ajax.js" />
-    <Content Include="js\array.js" />
-    <Content Include="js\code.js" />
-    <Content Include="js\columnsMenu.js" />
-    <Content Include="js\date.js" />
-    <Content Include="js\dialog.js" />
-    <Content Include="js\form.js" />
+    <Content Include="js\core\ajax.js" />
+    <Content Include="js\core\array.js" />
+    <Content Include="js\core\code.js" />
+    <Content Include="js\core\columnsMenu.js" />
+    <Content Include="js\core\date.js" />
+    <Content Include="js\core\dialog.js" />
+    <Content Include="js\core\form.js" />
     <Content Include="js\frame.js" />
-    <Content Include="js\grid.js" />
+    <Content Include="js\frame.min.js">
+      <DependentUpon>frame.js</DependentUpon>
+    </Content>
+    <Content Include="js\core\grid.js" />
     <Content Include="js\index.js" />
-    <Content Include="js\jqext.js" />
+    <Content Include="js\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
+    <Content Include="js\core\jqext.js" />
     <Content Include="js\login.js" />
     <Content Include="css\font-awesome.min.css" />
-    <Content Include="js\message.js" />
-    <Content Include="js\string.js" />
-    <Content Include="js\toolbar.js" />
-    <Content Include="js\url.js" />
-    <Content Include="js\user.js" />
+    <Content Include="js\login.min.js">
+      <DependentUpon>login.js</DependentUpon>
+    </Content>
+    <Content Include="js\core\message.js" />
+    <Content Include="js\core\string.js" />
+    <Content Include="js\core\toolbar.js" />
+    <Content Include="js\core\url.js" />
+    <Content Include="js\core\user.js" />
     <Content Include="libs\highcharts\highcharts.js" />
     <Content Include="libs\highcharts\model\exporting.js" />
     <Content Include="libs\jquery.md5.js" />
@@ -195,6 +214,8 @@
     <Content Include="css\miniui.css" />
     <Content Include="libs\jquery.miniui.js" />
     <Content Include="libs\pdfobject.min.js" />
+    <Content Include="Pages\Dashboard.html" />
+    <Content Include="Pages\Layout.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />

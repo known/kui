@@ -1,22 +1,22 @@
 ﻿[
   {
-    "outputFileName": "../dist/css/login.min.css",
+    "outputFileName": "css/login.min.css",
     "inputFiles": [
       "css/login.css"
     ]
   },
   {
-    "outputFileName": "../dist/js/login.min.js",
+    "outputFileName": "js/login.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
       "libs/jquery.md5.js",
-      "js/ajax.js",
-      "js/user.js",
+      "js/core/ajax.js",
+      "js/core/user.js",
       "js/login.js"
     ]
   },
   {
-    "outputFileName": "../dist/css/index.min.css",
+    "outputFileName": "css/index.min.css",
     "inputFiles": [
       "css/font-awesome.min.css",
       "css/miniui.css",
@@ -24,21 +24,21 @@
     ]
   },
   {
-    "outputFileName": "../dist/js/index.min.js",
+    "outputFileName": "js/index.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
       "libs/jquery.miniui.js",
-      "js/ajax.js",
-      "js/user.js",
-      "js/code.js",
-      "js/message.js",
-      "js/dialog.js",
-      "js/toolbar.js",
+      "js/core/ajax.js",
+      "js/core/user.js",
+      "js/core/code.js",
+      "js/core/message.js",
+      "js/core/dialog.js",
+      "js/core/toolbar.js",
       "js/index.js"
     ]
   },
   {
-    "outputFileName": "../dist/css/frame.min.css",
+    "outputFileName": "css/frame.min.css",
     "inputFiles": [
       "css/font-awesome.min.css",
       "css/miniui.css",
@@ -46,26 +46,26 @@
     ]
   },
   {
-    "outputFileName": "../dist/js/frame.min.js",
+    "outputFileName": "js/frame.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
       "libs/pdfobject.min.js",
       "libs/jquery.miniui.js",
       "libs/highcharts/highcharts.js",
-      "js/string.js",
-      "js/array.js",
-      "js/date.js",
-      "js/jqext.js",
-      "js/url.js",
-      "js/ajax.js",
-      "js/user.js",
-      "js/code.js",
-      "js/message.js",
-      "js/dialog.js",
-      "js/toolbar.js",
-      "js/grid.js",
-      "js/form.js",
-      "js/columnsMenu.js",
+      "js/core/string.js",
+      "js/core/array.js",
+      "js/core/date.js",
+      "js/core/jqext.js",
+      "js/core/url.js",
+      "js/core/ajax.js",
+      "js/core/user.js",
+      "js/core/code.js",
+      "js/core/message.js",
+      "js/core/dialog.js",
+      "js/core/toolbar.js",
+      "js/core/grid.js",
+      "js/core/form.js",
+      "js/core/columnsMenu.js",
       "js/frame.js"
     ]
   }

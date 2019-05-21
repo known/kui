@@ -20,7 +20,7 @@
         Toolbar.bind('tbNavbar', TbNavbar);
         Toolbar.bind('tbMainTabs', TbMainTabs);
 
-        Ajax.getJson('/api/User/GetModules', function (result) {
+        Ajax.getJson('data/menu.txt', function (result) {
             _this.leftTree.loadData(result.menus);
             Code.setData(result.codes);
         });
