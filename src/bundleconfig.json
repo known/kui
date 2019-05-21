@@ -1,72 +1,78 @@
 ﻿[
   {
-    "outputFileName": "css/login.min.css",
+    "outputFileName": "dist/css/kui.min.css",
     "inputFiles": [
-      "css/login.css"
+      "src/css/font-awesome.css",
+      "src/css/miniui.css",
+      "src/css/kui.css"
     ]
   },
   {
-    "outputFileName": "js/login.min.js",
+    "outputFileName": "dist/js/kui.min.js",
+    "inputFiles": [
+      "src/libs/pdfobject.js",
+      "src/libs/miniui.js",
+      "src/libs/highcharts/highcharts.js",
+      "src/js/ui/string.js",
+      "src/js/ui/array.js",
+      "src/js/ui/date.js",
+      "src/js/ui/jqext.js",
+      "src/js/ui/url.js",
+      "src/js/ui/ajax.js",
+      "src/js/ui/user.js",
+      "src/js/ui/code.js",
+      "src/js/ui/message.js",
+      "src/js/ui/dialog.js",
+      "src/js/ui/toolbar.js",
+      "src/js/ui/grid.js",
+      "src/js/ui/form.js",
+      "src/js/ui/columnsMenu.js",
+      "src/js/kui.js"
+    ]
+  },
+  {
+    "outputFileName": "demo/css/login.min.css",
+    "inputFiles": [
+      "demo/css/login.css"
+    ]
+  },
+  {
+    "outputFileName": "demo/js/login.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
       "libs/jquery.md5.js",
-      "js/core/ajax.js",
-      "js/core/user.js",
-      "js/login.js"
+      "dist/js/kui.min.js",
+      "demo/js/login.js"
     ]
   },
   {
-    "outputFileName": "css/index.min.css",
+    "outputFileName": "demo/css/index.min.css",
     "inputFiles": [
-      "css/font-awesome.min.css",
-      "css/miniui.css",
-      "css/index.css"
+      "dist/css/kui.min.css",
+      "demo/css/index.css"
     ]
   },
   {
-    "outputFileName": "js/index.min.js",
+    "outputFileName": "demo/js/index.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
-      "libs/jquery.miniui.js",
-      "js/core/ajax.js",
-      "js/core/user.js",
-      "js/core/code.js",
-      "js/core/message.js",
-      "js/core/dialog.js",
-      "js/core/toolbar.js",
-      "js/index.js"
+      "dist/js/kui.min.js",
+      "demo/js/index.js"
     ]
   },
   {
-    "outputFileName": "css/frame.min.css",
+    "outputFileName": "demo/css/frame.min.css",
     "inputFiles": [
-      "css/font-awesome.min.css",
-      "css/miniui.css",
-      "css/frame.css"
+      "dist/css/kui.min.css",
+      "demo/css/frame.css"
     ]
   },
   {
-    "outputFileName": "js/frame.min.js",
+    "outputFileName": "demo/js/frame.min.js",
     "inputFiles": [
       "libs/jquery.min.js",
-      "libs/pdfobject.min.js",
-      "libs/jquery.miniui.js",
-      "libs/highcharts/highcharts.js",
-      "js/core/string.js",
-      "js/core/array.js",
-      "js/core/date.js",
-      "js/core/jqext.js",
-      "js/core/url.js",
-      "js/core/ajax.js",
-      "js/core/user.js",
-      "js/core/code.js",
-      "js/core/message.js",
-      "js/core/dialog.js",
-      "js/core/toolbar.js",
-      "js/core/grid.js",
-      "js/core/form.js",
-      "js/core/columnsMenu.js",
-      "js/frame.js"
+      "dist/js/kui.min.js",
+      "demo/js/frame.js"
     ]
   }
 ]
