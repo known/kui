@@ -223,6 +223,7 @@
     <Content Include="src\libs\pdfobject.js" />
     <Content Include="demo\Pages\Dashboard.html" />
     <Content Include="demo\Pages\Layout.html" />
+    <Content Include="package.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="demo\index.html" />
