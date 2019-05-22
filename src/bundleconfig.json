@@ -1,6 +1,6 @@
 ﻿[
   {
-    "outputFileName": "src/css/kui.min.css",
+    "outputFileName": "src/kui.min.css",
     "inputFiles": [
       "src/css/font-awesome.css",
       "src/css/miniui.css",
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "outputFileName": "src/js/kui.min.js",
+    "outputFileName": "src/kui.min.js",
     "inputFiles": [
       "src/libs/pdfobject.js",
       "src/libs/miniui.js",

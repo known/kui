@@ -73,15 +73,9 @@
       <DependentUpon>login.js</DependentUpon>
     </Content>
     <Content Include="src\css\kui.css" />
-    <Content Include="src\css\kui.min.css">
-      <DependentUpon>kui.css</DependentUpon>
-    </Content>
     <Content Include="demo\images\aiwrap.png" />
     <Content Include="demo\images\face.jpg" />
     <Content Include="demo\images\web_login_bg.jpg" />
-    <Content Include="src\js\kui.min.js">
-      <DependentUpon>kui.js</DependentUpon>
-    </Content>
     <Content Include="src\js\ui\ajax.js" />
     <Content Include="src\js\ui\array.js" />
     <Content Include="src\js\ui\code.js" />
@@ -100,6 +94,8 @@
     <Content Include="src\js\ui\toolbar.js" />
     <Content Include="src\js\ui\url.js" />
     <Content Include="src\js\ui\user.js" />
+    <Content Include="src\kui.min.css" />
+    <Content Include="src\kui.min.js" />
     <Content Include="src\libs\highcharts\highcharts.js" />
     <Content Include="src\libs\highcharts\model\exporting.js" />
     <Content Include="libs\jquery.md5.js" />
