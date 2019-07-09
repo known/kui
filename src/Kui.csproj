@@ -49,33 +49,26 @@
     <Content Include="bundleconfig.json" />
     <Content Include="demo\css\dashboard.css" />
     <Content Include="demo\css\frame.css" />
-    <Content Include="demo\css\frame.min.css">
-      <DependentUpon>frame.css</DependentUpon>
-    </Content>
+    <Content Include="demo\css\frame.min.css" />
     <Content Include="demo\css\index.css" />
-    <Content Include="demo\css\index.min.css">
-      <DependentUpon>index.css</DependentUpon>
-    </Content>
+    <Content Include="demo\css\index.min.css" />
     <Content Include="demo\css\login.css" />
+    <Content Include="demo\css\login.min.css" />
     <Content Include="demo\data\icon.txt" />
-    <None Include="demo\data\menu.json" />
-    <Content Include="demo\css\login.min.css">
-      <DependentUpon>login.css</DependentUpon>
-    </Content>
-    <Content Include="demo\js\frame.js" />
-    <Content Include="demo\js\frame.min.js">
-      <DependentUpon>frame.js</DependentUpon>
-    </Content>
-    <Content Include="demo\js\index.min.js">
-      <DependentUpon>index.js</DependentUpon>
-    </Content>
-    <Content Include="demo\js\login.min.js">
-      <DependentUpon>login.js</DependentUpon>
-    </Content>
-    <Content Include="src\css\kui.css" />
     <Content Include="demo\images\aiwrap.png" />
     <Content Include="demo\images\face.jpg" />
     <Content Include="demo\images\web_login_bg.jpg" />
+    <Content Include="demo\index.html" />
+    <Content Include="demo\js\frame.js" />
+    <Content Include="demo\js\frame.min.js" />
+    <Content Include="demo\js\index.js" />
+    <Content Include="demo\js\index.min.js" />
+    <Content Include="demo\js\login.js" />
+    <Content Include="demo\js\login.min.js" />
+    <Content Include="demo\login.html" />
+    <Content Include="demo\Pages\Dashboard.html" />
+    <Content Include="demo\Pages\Layout.html" />
+    <Content Include="src\css\kui.css" />
     <Content Include="src\js\ui\ajax.js" />
     <Content Include="src\js\ui\array.js" />
     <Content Include="src\js\ui\code.js" />
@@ -85,9 +78,7 @@
     <Content Include="src\js\ui\form.js" />
     <Content Include="src\js\kui.js" />
     <Content Include="src\js\ui\grid.js" />
-    <Content Include="demo\js\index.js" />
     <Content Include="src\js\ui\jqext.js" />
-    <Content Include="demo\js\login.js" />
     <Content Include="src\css\font-awesome.css" />
     <Content Include="src\js\ui\message.js" />
     <Content Include="src\js\ui\string.js" />
@@ -217,14 +208,9 @@
     <Content Include="src\css\miniui.css" />
     <Content Include="src\libs\miniui.js" />
     <Content Include="src\libs\pdfobject.js" />
-    <Content Include="demo\Pages\Dashboard.html" />
-    <Content Include="demo\Pages\Layout.html" />
     <Content Include="package.nuspec" />
+    <Content Include="demo\data\menu.json" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="demo\index.html" />
-    <Content Include="demo\login.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\fonts\fontawesome-webfont.ttf" />
