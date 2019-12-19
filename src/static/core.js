@@ -17,36 +17,35 @@ function Page (item) {
     this.render = function (body) {
         var html = this.getHtml();
         body.html(html);
-        mini.parse();
         this.init();
-    }
+    };
 
     this.init = function () {
-        
-    }
+
+    };
 
     this.getHtml = function () {
         return this.item.text + ' - 页面建设中......';
-    }
+    };
 
     this.getToolbar = function () {
         if (!this.page.buttons)
             return '';
-        
+
         var html = '<div class="mini-toolbar">';
         html += '</div>';
         return html;
-    }
+    };
 
     this.getStyle = function (url) {
         if (!url) return '';
         return '<style href="' + url + '">';
-    }
+    };
 
     this.getScript = function (url) {
         if (!url) return '';
         return '<script src="' + url + '"></script>';
-    }
+    };
 }
 
 function GridPage (item) {
@@ -63,7 +62,7 @@ function GridPage (item) {
         html += '</div>';
         html += this.getScript(this.page.script);
         return html;
-    }
+    };
 
     this.init = function () {
         if (!this.page.columns)
@@ -71,5 +70,5 @@ function GridPage (item) {
 
         var grid = mini.get(this.gridId);
         grid.setColumns(this.page.columns);
-    }
+    };
 }

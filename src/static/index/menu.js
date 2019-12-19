@@ -7,7 +7,7 @@ var Menu = function (element, options) {
     this.element = $(element);
     this.options = $.extend(true, {}, this.options, options);
     this.init();
-}
+};
 
 Menu.prototype = {
 
@@ -42,7 +42,7 @@ Menu.prototype = {
             var item = me.getItemByEvent(event);
 
             //alert(item);
-            //            me.toggleItem(item);
+            //me.toggleItem(item);
 
             li.toggleClass('open');
 
