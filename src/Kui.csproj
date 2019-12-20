@@ -52,11 +52,9 @@
     <Content Include="package.nuspec" />
     <Content Include="static\core.js" />
     <Content Include="static\images\face.jpg" />
-    <Content Include="static\index\frame.css" />
     <Content Include="static\index\images\tabs_icons.png" />
     <Content Include="static\index\index.css" />
-    <Content Include="static\index\menu.css" />
-    <Content Include="static\index\menu.js" />
+    <Content Include="static\index\index.js" />
     <Content Include="static\libs\font-awesome\css\font-awesome.css" />
     <Content Include="static\libs\font-awesome\css\font-awesome.min.css" />
     <Content Include="static\libs\font-awesome\fonts\fontawesome-webfont.svg" />

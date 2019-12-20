@@ -158,3 +158,40 @@ var MenuTip = function (menu) {
     });
 
 };
+
+$(function () {
+    //menu
+    var menu = new Menu("#mainMenu", {
+        itemclick: function (item) {
+            if (!item.children) {
+                activeTab(item);
+            }
+        }
+    });
+
+    $(".sidebar").mCustomScrollbar({ autoHideScrollbar: true });
+
+    new MenuTip(menu);
+
+    $.ajax({
+        url: "data/menu.json",
+        success: function (data) {
+            menu.loadData(data);
+        }
+    });
+
+    //toggle
+    $("#toggle, .sidebar-toggle").click(function () {
+        $('body').toggleClass('compact');
+    });
+
+    //dropdown
+    $(".dropdown-toggle").click(function (event) {
+        $(this).parent().addClass("open");
+        return false;
+    });
+
+    $(document).click(function (event) {
+        $(".dropdown").removeClass("open");
+    });
+});
