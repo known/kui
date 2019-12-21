@@ -164,7 +164,31 @@ $(function () {
     var menu = new Menu("#mainMenu", {
         itemclick: function (item) {
             if (!item.children) {
-                activeTab(item);
+                $.NZ_Window.show({
+                    title: '标题',
+                    width: 800,
+                    height: 400,
+                    url: 'http://www.baidu.com',//窗口打开链接
+                    content: '',//显示的内容或对象ID
+                    top: null,//纵坐标
+                    left: null,//横坐标
+                    tools: {
+                        close: true,//是否显示关闭按钮
+                        max: true,//是否显示最大化按钮
+                        refresh: true,//是否显示刷新按钮(存在iframe情况下显示)
+                        newWindow: true,//是否显示打开新窗口按钮
+                        subscript: true,//角标（用于拖动窗口大小）默认显示
+                    },
+                    style: {
+                        shadow: true,//周围阴影效果
+                        corner: false,//是否圆角
+                        color: ''//颜色(16进制的颜色代码)
+                    },
+                    isdrag: true,//是否允许拖动窗口
+                    autoSize: false,//自适应大小（只限iframe网页）
+                    before: function () { },//弹出前事件
+                    callback: function () { }//回调函数
+                });
             }
         }
     });
