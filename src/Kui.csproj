@@ -50,6 +50,13 @@
     <Content Include="static\libs\animate.min.css" />
     <Content Include="static\libs\syalert.min.css" />
     <Content Include="static\libs\syalert.min.js" />
+    <Content Include="static\ui\dialog\images\disposebtn-black.png" />
+    <Content Include="static\ui\dialog\images\disposebtn-white.png" />
+    <Content Include="static\ui\dialog\dialog.css" />
+    <Content Include="static\ui\tab.js" />
+    <Content Include="static\ui\grid.js" />
+    <Content Include="static\ui\form.js" />
+    <Content Include="static\ui\dialog\dialog.js" />
     <None Include="data\menu.json" />
     <Content Include="index.html" />
     <Content Include="package.nuspec" />
