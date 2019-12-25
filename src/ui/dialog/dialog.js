@@ -55,11 +55,14 @@
             shadow.height(((e.clientY - y) < 100) ? '100' : (($(window).height() - 5) < (e.clientY - y) ? ($(window).height() - 5) : (e.clientY - y)) + 'px');
         }
         function mouseUp(e) {
-            var bw = parseInt(els.css("border-left-width")); var bh = parseInt(els.css("border-bottom-width"));
+            var bw = parseInt(els.css("border-left-width")); 
+            var bh = parseInt(els.css("border-bottom-width"));
             var cw = shadow.width();
             var ch = shadow.height();
             els.animate({ 'width': cw, 'height': ch }, function () {
-                els.children(".window-content").css({ 'height': ch - parseInt(els.children(".window-title").height()) });
+                els.children(".window-content").css({ 
+                    'height': ch - parseInt(els.children(".window-title").height()) 
+                });
                 if ($(this).children(".window-content").children("iframe").length > 0) {
                     els.children(".window-content").children("iframe").css({ "height": ch - parseInt(els.children(".window-title").height()), "width": "100%" });
                 }
