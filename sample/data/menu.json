@@ -5,15 +5,16 @@
     "iconCls": "fa fa-desktop",
     "children": [
       {
-        "id": "1.1",
-        "text": "模块管理",
-        "iconCls": "fa fa-navicon"
+        "id": "list",
+        "text": "列表页面",
+        "iconCls": "fa fa-navicon",
+        "url": "pages/list.html"
       },
       {
-        "id": "xzgl",
+        "id": "form",
         "iconCls": "fa fa-leaf",
-        "text": "行政管理",
-        "url": "pages/1.html"
+        "text": "表单页面",
+        "url": "pages/form.html"
       },
       {
         "id": "sjzd",

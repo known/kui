@@ -164,20 +164,7 @@ $(function () {
     var menu = new Menu("#mainMenu", {
         itemclick: function (item) {
             if (!item.children) {
-                $.Dialog.show({
-                    title: '标题',
-                    width: 800,
-                    height: 400,
-                    url: 'http://www.baidu.com',
-                    content: '',
-                    operate: {
-                        close: true,
-                        max: true,
-                        refresh: true,
-                        newWindow: true
-                    },
-                    callback: function () { }
-                });
+                $('#content').attr('src', item.url);
             }
         }
     });
