@@ -11,7 +11,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-family: 微软雅黑;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 a {
@@ -79,15 +79,15 @@ a {
     cursor: pointer;
 }
 
-        .navbar-nav > li > a {
-            padding: 10px 15px;
-            outline: none;
-            color: #fff;
-        }
+    .navbar-nav > li > a {
+        padding: 10px 15px;
+        outline: none;
+        color: #fff;
+    }
 
-            .navbar-nav > li > a.userinfo {
-                padding-top: 10px;
-            }
+        .navbar-nav > li > a.userinfo {
+            padding-top: 10px;
+        }
 
 .navbar-right {
     position: absolute;
@@ -103,8 +103,8 @@ a {
     margin-right: 4px;
 }
 
-/* leftMenu */
-.menu {
+/* MainMenu */
+.main-menu {
     position: relative;
     cursor: pointer;
     background: #42485b;
@@ -118,52 +118,52 @@ ul, li {
     margin: 0;
 }
 
-.menu-title {
+.main-menu-title {
     display: block;
     line-height: 36px;
 }
 
-    .menu-title:hover {
+    .main-menu-title:hover {
         background: #00C1DE;
     }
 
-.menu-arrow {
+.main-menu-arrow {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 14px;
 }
 
-    .menu-arrow:after {
+    .main-menu-arrow:after {
         content: "\f104";
     }
 
-.open > a > .menu-arrow:after {
+.open > a > .main-menu-arrow:after {
     content: "\f106";
 }
 
-.menu-text {
+.main-menu-text {
     padding-left: 6px;
 }
 
-.menu ul {
+.main-menu ul {
     display: none;
     background-color: #333744;
 }
 
-.menu .open > ul {
+.main-menu .open > ul {
     display: block;
 }
 
-.menu-title {
+.main-menu-title {
     padding-left: 15px;
 }
 
-.menu ul .menu-title {
+.main-menu ul .main-menu-title {
     padding-left: 40px;
 }
 
-.menu ul ul .menu-title {
+.main-menu ul ul .main-menu-title {
     padding-left: 60px;
 }
 
@@ -186,21 +186,21 @@ ul, li {
     display: block;
 }
 
-.compact .menu-text,
-.compact .menu-arrow {
+.compact .main-menu-text,
+.compact .main-menu-arrow {
     display: none;
 }
 
-.compact .menu-title {
+.compact .main-menu-title {
     padding-left: 0px !important;
     text-align: center;
 }
 
-/*.compact .has-children > a > .menu-icon:before {
+/*.compact .has-children > a > .main-menu-icon:before {
     font-size:16px;
     content: "\f0d7";
 }
-.compact .open > a > .menu-icon:before {
+.compact .open > a > .main-menu-icon:before {
     content: "\f0d8";
 }*/
 
@@ -417,4 +417,10 @@ ul, li {
     top: auto;
     bottom: 100%;
     margin-bottom: 2px;
+}
+
+/* easyui */
+.main .tabs-icon {
+    font-size: 16px;
+    left: 6px;
 }

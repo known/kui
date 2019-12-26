@@ -3,13 +3,13 @@
 
 var Menu_Id = 1;
 
-var Menu = function (element, options) {
+var MainMenu = function (element, options) {
     this.element = $(element);
     this.options = $.extend(true, {}, this.options, options);
     this.init();
 };
 
-Menu.prototype = {
+MainMenu.prototype = {
 
     options: {
         data: null,
@@ -34,7 +34,7 @@ Menu.prototype = {
 
         me.loadData(opt.data);
 
-        el.on('click', '.menu-title', function (event) {
+        el.on('click', '.main-menu-title', function (event) {
             var el = $(event.currentTarget);
 
             var li = el.parent();
@@ -59,7 +59,7 @@ Menu.prototype = {
     },
 
     _renderItems: function (items, parent) {
-        var s = '<ul class="' + (parent ? "menu-submenu" : "menu") + '">';
+        var s = '<ul class="' + (parent ? "main-menu-submenu" : "main-menu") + '">';
         for (var i = 0, l = items.length; i < l; i++) {
             var item = items[i];
             s += this._renderItem(item);
@@ -73,9 +73,9 @@ Menu.prototype = {
         var me = this,
             hasChildren = item.children && item.children.length > 0;
 
-        var s = '<li class="' + (hasChildren ? 'has-children' : '') + '">';        //class="menu-item" open, expanded?
+        var s = '<li class="' + (hasChildren ? 'has-children' : '') + '">';        //class="main-menu-item" open, expanded?
 
-        s += '<a class="menu-title" data-id="' + item.id + '" ';
+        s += '<a class="main-menu-title" data-id="' + item.id + '" ';
         //        if (item.href) {
         //            s += 'href="' + item.href + '" target="' + (item.hrefTarget || '') + '"';
         //        }
@@ -83,14 +83,14 @@ Menu.prototype = {
 
 
         if (item.image) {
-            s += '<i class="menu-icon"><img src="' + item.image + '"/></i>';
+            s += '<i class="main-menu-icon"><img src="' + item.image + '"/></i>';
         } else {
-            s += '<i class="menu-icon fa ' + item.iconCls + '"></i>';
+            s += '<i class="main-menu-icon fa ' + item.iconCls + '"></i>';
         }
-        s += '<span class="menu-text">' + item.text + '</span>';
+        s += '<span class="main-menu-text">' + item.text + '</span>';
 
         if (hasChildren) {
-            s += '<span class="menu-arrow fa"></span>';
+            s += '<span class="main-menu-arrow fa"></span>';
         }
 
         s += '</a>';
@@ -104,7 +104,7 @@ Menu.prototype = {
     },
 
     getItemByEvent: function (event) {
-        var el = $(event.target).closest('.menu-title');
+        var el = $(event.target).closest('.main-menu-title');
         var id = el.attr("data-id");
         return this.getItemById(id);
     },
@@ -130,12 +130,12 @@ Menu.prototype = {
 
 };
 
-var MenuTip = function (menu) {
+var MainMenuTip = function (menu) {
     var template = '<div class="tooltip right menutip in"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>';
     var tip = $(template).appendTo(document.body);
     tip.hide();
 
-    menu.element.on("mouseenter", ".menu-title", function (event) {
+    menu.element.on("mouseenter", ".main-menu-title", function (event) {
         if (!$("body").hasClass("compact")) return;
 
         var jq = $(event.currentTarget);
@@ -153,7 +153,7 @@ var MenuTip = function (menu) {
         tip.css({ top: offset.top + height / 2 - tipHeight / 2, left: offset.left + width });
 
     });
-    menu.element.on("mouseleave", ".menu-title", function (event) {
+    menu.element.on("mouseleave", ".main-menu-title", function (event) {
         tip.hide();
     });
 
@@ -161,17 +161,23 @@ var MenuTip = function (menu) {
 
 $(function () {
     //menu
-    var menu = new Menu("#mainMenu", {
+    var menu = new MainMenu("#mainMenu", {
         itemclick: function (item) {
             if (!item.children) {
                 $('#content').attr('src', item.url);
+                $('#mainTabs').tabs('add', {
+                    title: item.text,
+                    selected: true,
+                    iconCls: item.iconCls,
+                    href: item.url
+                });
             }
         }
     });
 
     $(".sidebar").mCustomScrollbar({ autoHideScrollbar: true });
 
-    new MenuTip(menu);
+    new MainMenuTip(menu);
 
     $.ajax({
         url: "data/menu.json",
