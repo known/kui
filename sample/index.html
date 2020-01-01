@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="static/libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/libs/easyui/easyui.css">
     <link rel="stylesheet" href="static/libs/scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="static/common/common.css">
     <link rel="stylesheet" href="static/index/index.css">
 </head>
 <body>
@@ -19,15 +20,15 @@
             <li><a id="toggle"><span class="fa fa-bars"></span></a></li>
         </ul>
         <ul class="navbar-nav navbar-right">
-            <li><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
+            <li onclick="UserTool.todo()"><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle userinfo">
                     <img class="user-img" src="static/images/face.jpg" />个人资料<i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu pull-right">
-                    <li onclick=""><a href="#"><i class="fa fa-eye"></i> 用户信息</a></li>
-                    <li onclick=""><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
-                    <li onclick=""><a href="#"><i class="fa fa-user"></i> 退出登录</a></li>
+                    <li onclick="UserTool.info()"><a href="#"><i class="fa fa-user"></i> 用户信息</a></li>
+                    <li onclick="UserTool.updPwd()"><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
+                    <li onclick="UserTool.logout()"><a href="#"><i class="fa fa-power-off"></i> 安全退出</a></li>
                 </ul>
             </li>
         </ul>
@@ -47,6 +48,7 @@
     <script src="static/libs/jquery.min.js"></script>
     <script src="static/libs/easyui/jquery.easyui.min.js"></script>
     <script src="static/libs/scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="static/common/common.js"></script>
     <script src="static/index/index.js"></script>
 </body>
 </html>
