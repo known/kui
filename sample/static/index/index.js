@@ -13,7 +13,7 @@ MainMenu.prototype = {
 
     options: {
         data: null,
-        itemclick: null
+        itemClick: null
     },
 
     loadData: function (data) {
@@ -46,7 +46,7 @@ MainMenu.prototype = {
 
             li.toggleClass('open');
 
-            if (opt.itemclick) opt.itemclick.call(me, item);
+            if (opt.itemClick) opt.itemClick.call(me, item);
 
         });
 
@@ -159,45 +159,72 @@ var MainMenuTip = function (menu) {
 
 };
 
-$(function () {
-    //menu
-    var menu = new MainMenu("#mainMenu", {
-        itemclick: function (item) {
-            if (!item.children) {
-                $('#content').attr('src', item.url);
-                $('#mainTabs').tabs('add', {
-                    title: item.text,
-                    selected: true,
-                    iconCls: item.iconCls,
-                    href: item.url
-                });
+var MainView = {
+
+    mainTabs: null,
+    currentTab: null,
+
+    show: function (option) {
+        this.mainTabs = $('#mainTabs');
+        this._initMenu(option.mainMenuUrl);
+        
+        var _this = this;
+        $('#toggle, .sidebar-toggle').click(function () {
+            $('body').toggleClass('compact');
+            _this.mainTabs.tabs('resize');
+        });
+    },
+
+    setDropdown: function () {
+        $('.dropdown-toggle').click(function (event) {
+            $(this).parent().addClass('open');
+            return false;
+        });
+
+        $(document).click(function (event) {
+            $('.dropdown').removeClass('open');
+        });
+    },
+
+    addTab: function (item) {
+        this.currentTab = item;
+        if (this.mainTabs.tabs('exists', item.text)) {
+            this.mainTabs.tabs('select', item.text);
+        } else {
+            var content = '<iframe src="' + item.url + '" style="width:100%;height:100%;border:0;"></iframe>';
+            this.mainTabs.tabs('add', {
+                title: item.text,
+                iconCls: item.iconCls,
+                content: content,
+                closable: true
+            });
+        }
+    },
+
+    _initMenu: function (url) {
+        var _this = this;
+        var menu = new MainMenu('#mainMenu', {
+            itemClick: function (item) {
+                if (!item.children) {
+                    _this.addTab(item);
+                }
             }
-        }
+        });
+        $('.sidebar').mCustomScrollbar({ autoHideScrollbar: true });
+        new MainMenuTip(menu);
+        $.ajax({
+            url: url,
+            success: function (data) {
+                menu.loadData(data);
+            }
+        });
+    }
+
+};
+
+$(function () {
+    MainView.show({
+        mainMenuUrl: 'data/menu.json'
     });
-
-    $(".sidebar").mCustomScrollbar({ autoHideScrollbar: true });
-
-    new MainMenuTip(menu);
-
-    $.ajax({
-        url: "data/menu.json",
-        success: function (data) {
-            menu.loadData(data);
-        }
-    });
-
-    //toggle
-    $("#toggle, .sidebar-toggle").click(function () {
-        $('body').toggleClass('compact');
-    });
-
-    //dropdown
-    $(".dropdown-toggle").click(function (event) {
-        $(this).parent().addClass("open");
-        return false;
-    });
-
-    $(document).click(function (event) {
-        $(".dropdown").removeClass("open");
-    });
+    MainView.setDropdown();
 });
