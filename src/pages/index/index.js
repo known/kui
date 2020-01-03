@@ -228,8 +228,10 @@ var UserTool = {
     },
 
     logout: function () {
-        Message.confirm('确定要退出系统？', function (r) {
-            Message.alert(r);
+        Message.confirm('确定要退出系统？', function (result) {
+            if (result) {
+                location = 'login.html';
+            }
         });
     }
 

@@ -105,3 +105,31 @@ a {
 .dropdown-menu .fa {
     width: 16px;
 }
+
+/* window */
+.window {
+    padding: 0;
+}
+
+    .window .window-header {
+        padding: 5px 10px;
+    }
+
+        .window .window-header .panel-tool {
+            right: 5px;
+        }
+
+    .window .window-body {
+        border: 0;
+    }
+
+.messager-body {
+    padding: 10px;
+}
+
+.dialog-button {
+    border-top-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
