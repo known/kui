@@ -1,100 +1,137 @@
 ﻿[
   {
-    "id": "1",
-    "text": "系统管理",
-    "iconCls": "fa fa-desktop",
+    "id": "home",
+    "text": "主页",
+    "iconCls": "fa fa-home",
     "children": [
       {
-        "id": "list",
-        "text": "列表页面",
-        "iconCls": "fa fa-navicon",
-        "url": "pages/list.html"
+        "id": "home1",
+        "text": "主页一",
+        "iconCls": "fa fa-dashboard",
+        "url": "pages/home/home1.html"
       },
       {
-        "id": "form",
-        "iconCls": "fa fa-leaf",
-        "text": "表单页面",
-        "url": "pages/form.html"
+        "id": "home2",
+        "iconCls": "fa fa-home",
+        "text": "主页二",
+        "url": "pages/home/home2.html"
       },
       {
-        "id": "sjzd",
-        "iconCls": "fa fa-book",
-        "text": "数据字典",
-        "url": "pages/1.html"
+        "id": "home3",
+        "iconCls": "fa fa-home",
+        "text": "主页三",
+        "url": "pages/home/home3.html"
       },
       {
-        "id": "djbm",
-        "iconCls": "fa fa-barcode",
-        "text": "单据编码",
-        "url": "pages/1.html"
+        "id": "home4",
+        "iconCls": "fa fa-home",
+        "text": "主页四",
+        "url": "pages/home/home4.html"
       },
       {
-        "id": "xtgn",
-        "iconCls": "fa fa-navicon",
-        "text": "系统功能",
-        "url": "pages/1.html"
+        "id": "home5",
+        "iconCls": "fa fa-home",
+        "text": "主页五",
+        "url": "pages/home/home5.html"
       }
     ]
   },
   {
-    "id": "sjgl",
-    "iconCls": "fa fa-database",
-    "text": "数据管理",
+    "id": "chart",
+    "iconCls": "fa fa-bar-chart",
+    "text": "统计图表",
     "children": [
       {
-        "id": "sjklj",
-        "iconCls": "fa fa-plug",
-        "text": "数据库连接",
-        "url": "pages/1.html"
+        "id": "echarts",
+        "iconCls": "fa fa-area-chart",
+        "text": "百度ECharts",
+        "url": "pages/chart/echarts.html"
       },
       {
-        "id": "sjbgl",
-        "iconCls": "fa fa-table",
-        "text": "数据表管理",
-        "url": "pages/1.html"
-      },
-      {
-        "id": "sjygl",
-        "iconCls": "fa fa-bullseye",
-        "text": "数据源管理",
-        "url": "pages/1.html"
+        "id": "highcharts",
+        "iconCls": "fa fa-line-chart",
+        "text": "Highcharts",
+        "url": "pages/chart/highcharts.html"
       }
     ]
   },
   {
-    "id": "dwzz",
-    "iconCls": "fa fa-coffee",
-    "text": "单位组织",
+    "id": "form",
+    "iconCls": "fa fa-edit",
+    "text": "表单",
     "children": [
       {
-        "id": "gsgl",
+        "id": "basic",
         "iconCls": "fa fa-sitemap",
-        "text": "公司管理",
-        "url": "pages/1.html"
+        "text": "基本表单",
+        "url": "pages/form/basic.html"
       },
       {
-        "id": "bmgl",
+        "id": "valid",
         "iconCls": "fa fa-th-list",
-        "text": "部门管理",
-        "url": "pages/1.html"
+        "text": "表单验证",
+        "url": "pages/form/valid.html"
       },
       {
-        "id": "gwgl",
-        "iconCls": "fa fa-graduation-cap",
-        "text": "岗位管理",
-        "url": "pages/1.html"
-      },
-      {
-        "id": "jsgl",
+        "id": "step",
         "iconCls": "fa fa-paw",
-        "text": "角色管理",
-        "url": "pages/1.html"
+        "text": "表单向导",
+        "url": "pages/form/step.html"
       },
       {
-        "id": "yhgl",
+        "id": "editor",
+        "iconCls": "fa fa-graduation-cap",
+        "text": "编辑器",
+        "url": "pages/form/editor.html"
+      }
+    ]
+  },
+  {
+    "id": "page",
+    "iconCls": "fa fa-desktop",
+    "text": "页面",
+    "children": [
+      {
+        "id": "profile",
         "iconCls": "fa fa-user",
-        "text": "用户管理",
-        "url": "pages/1.html"
+        "text": "个人资料",
+        "url": "pages/page/profile.html"
+      },
+      {
+        "id": "contact",
+        "iconCls": "fa fa-users",
+        "text": "联系人",
+        "url": "pages/page/contact.html"
+      },
+      {
+        "id": "project",
+        "iconCls": "fa fa-coffee",
+        "text": "项目管理",
+        "url": "pages/page/project.html"
+      },
+      {
+        "id": "file",
+        "iconCls": "fa fa-folder-open",
+        "text": "文件管理",
+        "url": "pages/page/file.html"
+      },
+      {
+        "id": "404",
+        "iconCls": "fa fa-file-o",
+        "text": "404页面",
+        "url": "pages/page/404.html"
+      },
+      {
+        "id": "500",
+        "iconCls": "fa fa-file-text-o",
+        "text": "500页面",
+        "url": "pages/page/500.html"
+      },
+      {
+        "id": "blank",
+        "iconCls": "fa fa-file-o",
+        "text": "空白页面",
+        "url": "pages/page/blank.html"
       }
     ]
   },
@@ -145,43 +182,6 @@
             "url": "pages/1.html"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "lczx",
-    "iconCls": "fa fa-share-alt",
-    "text": "流程中心",
-    "children": [
-      {
-        "id": "mbgl",
-        "iconCls": "fa fa-share-alt",
-        "text": "模板管理",
-        "url": "pages/1.html"
-      },
-      {
-        "id": "wdrw",
-        "iconCls": "fa fa-file-word-o",
-        "text": "我的任务",
-        "url": "pages/1.html"
-      },
-      {
-        "id": "gzwt",
-        "iconCls": "fa fa-coffee",
-        "text": "工作委托",
-        "url": "pages/1.html"
-      },
-      {
-        "id": "lcjk",
-        "iconCls": "fa fa-eye",
-        "text": "流程监控",
-        "url": "pages/1.html"
-      },
-      {
-        "id": "xtlcgl",
-        "iconCls": "fa fa-industry",
-        "text": "系统流程案例",
-        "url": "pages/1.html"
       }
     ]
   },
