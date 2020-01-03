@@ -190,6 +190,26 @@ var MainView = {
         }
     },
 
+    openTab: function (obj, url) {
+        this.addTab({
+            text: $(obj).text(),
+            iconCls: $(obj).find('i').attr('class'),
+            url: url
+        });
+    },
+
+    updPwd: function (obj) {
+        Message.show();
+    },
+
+    logout: function () {
+        Message.confirm('确定要退出系统？', function (result) {
+            if (result) {
+                location = 'login.html';
+            }
+        });
+    },
+
     _initMenu: function (url) {
         var _this = this;
         var menu = new MainMenu('#mainMenu', {
@@ -205,32 +225,6 @@ var MainView = {
             url: url,
             success: function (data) {
                 menu.loadData(data);
-            }
-        });
-    }
-
-};
-
-var UserTool = {
-
-    todo: function () {
-        MainView.addTab({
-            text: '代办事项', iconCls: 'fa fa-paper-plane', url: 'pages/todo.html'
-        });
-    },
-
-    info: function () {
-        Message.prompt();
-    },
-
-    updPwd: function () {
-        Message.show();
-    },
-
-    logout: function () {
-        Message.confirm('确定要退出系统？', function (result) {
-            if (result) {
-                location = 'login.html';
             }
         });
     }

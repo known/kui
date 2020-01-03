@@ -20,15 +20,15 @@
             <li><a id="toggle"><span class="fa fa-bars"></span></a></li>
         </ul>
         <ul class="navbar-nav navbar-right">
-            <li onclick="UserTool.todo()"><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
+            <li onclick="MainView.openTab(this, 'pages/todo.html')"><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle userinfo">
                     <img class="user-img" src="pages/index/images/face.jpg" />个人资料<i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu pull-right">
-                    <li onclick="UserTool.info()"><a href="#"><i class="fa fa-user"></i> 用户信息</a></li>
-                    <li onclick="UserTool.updPwd()"><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
-                    <li onclick="UserTool.logout()"><a href="#"><i class="fa fa-power-off"></i> 安全退出</a></li>
+                    <li onclick="MainView.openTab(this, 'pages/user.html')"><a href="#"><i class="fa fa-user"></i> 用户信息</a></li>
+                    <li onclick="MainView.updPwd(this)"><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
+                    <li onclick="MainView.logout()"><a href="#"><i class="fa fa-power-off"></i> 安全退出</a></li>
                 </ul>
             </li>
         </ul>
