@@ -172,14 +172,10 @@ $.fn.extend({
         if (!url)
             return;
 
-        var arr = url.split('/');
-        var view = arr[arr.length - 1].split('.')[0];
+        //var arr = url.split('/');
+        //var view = arr[arr.length - 1].split('.')[0];
         $(this).loadHtml(url, function () {
-            if (callback) {
-                callback();
-            } else {
-                eval(view + '.show();');
-            }
+            callback && callback();
         });
     }
 

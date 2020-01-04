@@ -222,13 +222,14 @@
         </td>
     </tr>
 </table>
+<script src="static/libs/highcharts.js"></script>
 <script>
     var Dashboard = {
         show: function () {
             this.buildChart();
         },
         buildChart: function () {
-            var chart = new Highcharts.Chart({
+            Highcharts.chart({
                 chart: {
                     renderTo: 'chartLine',
                     type: 'line',
@@ -287,4 +288,5 @@
             });
         }
     };
+    Dashboard.show();
 </script>

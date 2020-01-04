@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+.content {
+    padding: 5px;
+}
+
 /* dropdown */
 .dropup,
 .dropdown {

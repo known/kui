@@ -323,7 +323,9 @@ ul, li {
 /* easyui */
 #mainTabs .tabs-icon {
     font-size: 16px;
-    left: 6px;
+}
+#mainTabs .tabs-inner {
+    padding: 0 15px;
 }
 #mainTabs .panel-body {
     overflow: initial;
