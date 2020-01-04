@@ -180,7 +180,8 @@ var MainView = {
         if (this.mainTabs.tabs('exists', item.text)) {
             this.mainTabs.tabs('select', item.text);
         } else {
-            var content = '<iframe src="' + item.url + '" style="width:100%;height:100%;border:0;"></iframe>';
+            var url = 'layout.html?p=' + item.url;
+            var content = '<iframe src="' + url + '" style="width:100%;height:100%;border:0;"></iframe>';
             this.mainTabs.tabs('add', {
                 title: item.text,
                 iconCls: item.iconCls,
