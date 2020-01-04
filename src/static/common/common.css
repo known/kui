@@ -110,7 +110,7 @@ a {
     width: 16px;
 }
 
-/* window */
+/* easyui */
 .window {
     padding: 0;
 }
@@ -136,4 +136,8 @@ a {
     border-left-width: 0;
     border-right-width: 0;
     border-bottom-width: 0;
+}
+
+.panel-icon {
+    margin-top: -6px;
 }

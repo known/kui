@@ -74,13 +74,13 @@
       },
       {
         "id": "step",
-        "iconCls": "fa fa-paw",
+        "iconCls": "fa fa-list-ol",
         "text": "表单向导",
         "url": "form/step"
       },
       {
         "id": "editor",
-        "iconCls": "fa fa-graduation-cap",
+        "iconCls": "fa fa-underline",
         "text": "编辑器",
         "url": "form/editor"
       }
@@ -117,7 +117,7 @@
       },
       {
         "id": "404",
-        "iconCls": "fa fa-file-o",
+        "iconCls": "fa fa-photo",
         "text": "404页面",
         "url": "page/404"
       },
@@ -132,6 +132,49 @@
         "iconCls": "fa fa-file-o",
         "text": "空白页面",
         "url": "page/blank"
+      }
+    ]
+  },
+  {
+    "id": "element",
+    "iconCls": "fa fa-flask",
+    "text": "UI元素",
+    "children": [
+      {
+        "id": "basic",
+        "iconCls": "fa fa-navicon",
+        "text": "基础",
+        "url": "element/basic"
+      },
+      {
+        "id": "layout",
+        "iconCls": "fa fa-columns",
+        "text": "布局",
+        "url": "element/layout"
+      },
+      {
+        "id": "form",
+        "iconCls": "fa fa-server",
+        "text": "表单",
+        "url": "element/form"
+      },
+      {
+        "id": "menu",
+        "iconCls": "fa fa-list",
+        "text": "菜单与按钮",
+        "url": "element/menu"
+      },
+      {
+        "id": "window",
+        "iconCls": "fa fa-window-maximize",
+        "text": "窗口",
+        "url": "element/window"
+      },
+      {
+        "id": "grid",
+        "iconCls": "fa fa-table",
+        "text": "网格与树",
+        "url": "element/grid"
       }
     ]
   }
