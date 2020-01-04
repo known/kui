@@ -8,31 +8,31 @@
         "id": "home1",
         "text": "主页一",
         "iconCls": "fa fa-dashboard",
-        "url": "pages/home/home1"
+        "url": "home/home1"
       },
       {
         "id": "home2",
         "iconCls": "fa fa-home",
         "text": "主页二",
-        "url": "pages/home/home2"
+        "url": "home/home2"
       },
       {
         "id": "home3",
         "iconCls": "fa fa-home",
         "text": "主页三",
-        "url": "pages/home/home3"
+        "url": "home/home3"
       },
       {
         "id": "home4",
         "iconCls": "fa fa-home",
         "text": "主页四",
-        "url": "pages/home/home4"
+        "url": "home/home4"
       },
       {
         "id": "home5",
         "iconCls": "fa fa-home",
         "text": "主页五",
-        "url": "pages/home/home5"
+        "url": "home/home5"
       }
     ]
   },
@@ -45,13 +45,13 @@
         "id": "echarts",
         "iconCls": "fa fa-area-chart",
         "text": "百度ECharts",
-        "url": "pages/chart/echarts"
+        "url": "chart/echarts"
       },
       {
         "id": "highcharts",
         "iconCls": "fa fa-line-chart",
         "text": "Highcharts",
-        "url": "pages/chart/highcharts"
+        "url": "chart/highcharts"
       }
     ]
   },
@@ -64,25 +64,25 @@
         "id": "basic",
         "iconCls": "fa fa-sitemap",
         "text": "基本表单",
-        "url": "pages/form/basic"
+        "url": "form/basic"
       },
       {
         "id": "valid",
         "iconCls": "fa fa-th-list",
         "text": "表单验证",
-        "url": "pages/form/valid"
+        "url": "form/valid"
       },
       {
         "id": "step",
         "iconCls": "fa fa-paw",
         "text": "表单向导",
-        "url": "pages/form/step"
+        "url": "form/step"
       },
       {
         "id": "editor",
         "iconCls": "fa fa-graduation-cap",
         "text": "编辑器",
-        "url": "pages/form/editor"
+        "url": "form/editor"
       }
     ]
   },
@@ -95,43 +95,43 @@
         "id": "profile",
         "iconCls": "fa fa-user",
         "text": "个人资料",
-        "url": "pages/page/profile"
+        "url": "page/profile"
       },
       {
         "id": "contact",
         "iconCls": "fa fa-users",
         "text": "联系人",
-        "url": "pages/page/contact"
+        "url": "page/contact"
       },
       {
         "id": "project",
         "iconCls": "fa fa-coffee",
         "text": "项目管理",
-        "url": "pages/page/project"
+        "url": "page/project"
       },
       {
         "id": "file",
         "iconCls": "fa fa-folder-open",
         "text": "文件管理",
-        "url": "pages/page/file"
+        "url": "page/file"
       },
       {
         "id": "404",
         "iconCls": "fa fa-file-o",
         "text": "404页面",
-        "url": "pages/page/404"
+        "url": "page/404"
       },
       {
         "id": "500",
         "iconCls": "fa fa-file-text-o",
         "text": "500页面",
-        "url": "pages/page/500"
+        "url": "page/500"
       },
       {
         "id": "blank",
         "iconCls": "fa fa-file-o",
         "text": "空白页面",
-        "url": "pages/page/blank"
+        "url": "page/blank"
       }
     ]
   }
