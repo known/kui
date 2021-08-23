@@ -1,78 +1,127 @@
-﻿[
+[
   {
-    "outputFileName": "src/kui.min.css",
+    "outputFileName": "static/js/lang/zh-CN.min.js",
     "inputFiles": [
-      "src/css/font-awesome.css",
-      "src/css/miniui.css",
-      "src/css/kui.css"
+      "src/Frame/Lang/zhCN.js"
     ]
   },
   {
-    "outputFileName": "src/kui.min.js",
+    "outputFileName": "static/js/lang/en.min.js",
     "inputFiles": [
-      "src/libs/pdfobject.js",
-      "src/libs/miniui.js",
-      "src/libs/highcharts/highcharts.js",
-      "src/js/ui/string.js",
-      "src/js/ui/array.js",
-      "src/js/ui/date.js",
-      "src/js/ui/jqext.js",
-      "src/js/ui/url.js",
-      "src/js/ui/ajax.js",
-      "src/js/ui/user.js",
-      "src/js/ui/code.js",
-      "src/js/ui/message.js",
-      "src/js/ui/dialog.js",
-      "src/js/ui/toolbar.js",
-      "src/js/ui/grid.js",
-      "src/js/ui/form.js",
-      "src/js/ui/columnsMenu.js",
-      "src/js/kui.js"
+      "src/Frame/Lang/en.js"
+    ]
+  },
+  //Frame
+  {
+    "outputFileName": "static/css/login.min.css",
+    "inputFiles": [
+      "src/Frame/Kui/login.css"
     ]
   },
   {
-    "outputFileName": "demo/css/login.min.css",
+    "outputFileName": "static/js/login.min.js",
     "inputFiles": [
-      "demo/css/login.css"
+      "src/config.js",
+      "src/Frame/Kui/login.js"
     ]
   },
   {
-    "outputFileName": "demo/js/login.min.js",
+    "outputFileName": "static/css/app.min.css",
     "inputFiles": [
-      "libs/jquery.min.js",
-      "libs/jquery.md5.js",
-      "src/js/kui.min.js",
-      "demo/js/login.js"
+      "src/Frame/App/app.css",
+      "src/Frame/Kui/layer.css"
     ]
   },
   {
-    "outputFileName": "demo/css/index.min.css",
+    "outputFileName": "static/js/app.min.js",
     "inputFiles": [
-      "src/css/kui.min.css",
-      "demo/css/index.css"
+      "src/config.js",
+      "src/common.js",
+      "src/Frame/Kui/layer.js",
+      "src/Frame/Kui/components/chart.js",
+      "src/Frame/App/components/*.js",
+      "src/Frame/App/app.js"
     ]
   },
   {
-    "outputFileName": "demo/js/index.min.js",
+    "outputFileName": "static/css/index.min.css",
     "inputFiles": [
-      "libs/jquery.min.js",
-      "src/js/kui.min.js",
-      "demo/js/index.js"
+      "src/common.css",
+      "src/Frame/Kui/css/form.css",
+      "src/Frame/Kui/layer.css",
+      "src/Frame/Kui/admin.css"
     ]
   },
   {
-    "outputFileName": "demo/css/frame.min.css",
+    "outputFileName": "static/js/index.min.js",
     "inputFiles": [
-      "src/css/kui.min.css",
-      "demo/css/frame.css"
+      "src/config.js",
+      "src/common.js",
+      "src/Frame/Kui/components/form/*.js",
+      "src/Frame/Kui/layer.js",
+      "src/Frame/Kui/admin.js"
     ]
   },
   {
-    "outputFileName": "demo/js/frame.min.js",
+    "outputFileName": "static/css/kui.min.css",
     "inputFiles": [
-      "libs/jquery.min.js",
-      "src/js/kui.min.js",
-      "demo/js/frame.js"
+      "src/common.css",
+      "src/Frame/Kui/layer.css",
+      "src/Frame/Kui/css/*.css"
+    ]
+  },
+  {
+    "outputFileName": "static/js/kui.min.js",
+    "inputFiles": [
+      "src/config.js",
+      "src/common.js",
+      "src/Frame/Kui/layer.js",
+      "src/Frame/Kui/components/form/*.js",
+      "src/Frame/Kui/components/grid/*.js",
+      "src/Frame/Kui/components/*.js",
+      "src/Frame/Kui/kui.js"
+    ]
+  },
+  {
+    "outputFileName": "static/js/biz.min.js",
+    "inputFiles": [
+      "src/Frame/Core/biz/*.js"
+    ]
+  },
+  {
+    "outputFileName": "static/js/sys.min.js",
+    "inputFiles": [
+      "src/Frame/Core/sys/*.js",
+      "src/Frame/Core/Dashboard.js"
+    ]
+  },
+  //DEV
+  {
+    "outputFileName": "static/dev/app.min.css",
+    "inputFiles": [
+      "src/Dev/app.css"
+    ]
+  },
+  {
+    "outputFileName": "static/dev/app.min.js",
+    "inputFiles": [
+      "src/Dev/func.js",
+      "src/Dev/apps/*.js",
+      "src/Dev/app.js"
+    ]
+  },
+  {
+    "outputFileName": "static/dev/page.min.css",
+    "inputFiles": [
+      "src/Dev/page.css"
+    ]
+  },
+  {
+    "outputFileName": "static/dev/page.min.js",
+    "inputFiles": [
+      "src/Dev/func.js",
+      "src/Dev/page.js",
+      "src/Dev/pages/*.js"
     ]
   }
 ]

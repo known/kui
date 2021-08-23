@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error</title>
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <style type="text/css">
+        .middle-box {
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 170px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body class="animated fadeInDown">
+    <div class="middle-box">
+        <h1 id="h1"></h1>
+        <h3 id="h3"></h3>
+        <div id="content"></div>
+    </div>
+    <script type="text/javascript">
+        (function () {
+            var t = getUrlParam('t') || '500';
+            var title = '服务器内部错误';
+            var content = '服务器好像出错了...';
+
+            if (t === '403') {
+                title = '无权限访问！';
+                content = '抱歉，您无权限访问该页面~';
+            } else if (t === '404') {
+                title = '页面未找到！';
+                content = '抱歉，页面好像去火星了~';
+            }
+
+            document.getElementById('h1').innerHTML = t;
+            document.getElementById('h3').innerHTML = title;
+            document.getElementById('content').innerHTML = content;
+
+            function getUrlParam(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var res = window.location.search.substr(1).match(reg);
+                if (res == null)
+                    return '';
+
+                return decodeURI(res[2]);
+            }
+        })();
+    </script>
+</body>
+</html>

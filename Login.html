@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KUI</title>
+    <base href="/">
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/login.min.css">
+</head>
+<body style="background-image:url(/static/img/bg.jpg);">
+    <div class="stars"></div>
+    <div class="login-header">
+        <h2>KUI</h2>
+    </div>
+    <div class="login" id="login">
+        <div class="login-body">
+            <div class="login-bell">
+                <img src="/static/img/login_icon1.png" alt="login" />
+            </div>
+            <div id="login1" class="form">
+                <div class="login-title" id="ltLogin"></div>
+                <div class="form-item">
+                    <label class="fa fa-user" for="userName"></label>
+                    <input type="text" id="userName" autocomplete="off" onenter="$('#password').focus()">
+                </div>
+                <div class="form-item">
+                    <label class="fa fa-lock" for="password"></label>
+                    <input type="password" id="password" autocomplete="off" onenter="$('#captcha').focus()">
+                </div>
+                <div class="form-item">
+                    <label class="fa fa-check-circle-o" for="captcha"></label>
+                    <input type="text" id="captcha" autocomplete="off" onenter="$('#btnLogin').click()">
+                    <img src="/home/captcha" id="imgCaptcha" alt="">
+                </div>
+                <div class="form-item">
+                    <button id="btnLogin" class="btn-primary"></button>
+                </div>
+                <div id="message"></div>
+            </div>
+            <div id="login2" class="form" style="display:none;">
+                <div class="login-title" id="ltScan"></div>
+                <div class="login-qrcode">
+                    <img src="/static/img/qrcode.png" alt="qrcode" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-footer">
+        <p class="copyright">&copy;2020-2021 <a href="http://www.pumantech.com" target="_blank">普漫科技</a></p>
+    </div>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/lang/zh-CN.min.js"></script>
+    <script src="/static/js/login.min.js"></script>
+</body>
+</html>
