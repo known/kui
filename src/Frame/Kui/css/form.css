@@ -56,6 +56,15 @@ button:before {margin-right:3px;}
 .tabs-form .tabs-header {padding:0;}
 .tabs-form .tabs-header ul {float:left;}
 
+.form-dialog, 
+.tabs-form .form-dialog {top:50%;left:50%;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.form-dialog-max {position:absolute;top:0;right:0;bottom:0;left:0;display:block;}
+.form-dialog .form-card-header {
+    font-weight:bold;cursor:move;
+    background-color:#428bca;color:#fff;
+}
+.form-dialog .form-title {background-color:#428bca;}
+
 /*form-info*/
 .form-info {
     position:absolute;top:10px;left:10px;right:10px;bottom:10px;z-index:9999;

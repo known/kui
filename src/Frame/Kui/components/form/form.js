@@ -10,6 +10,8 @@ function Form(elem, option) {
         _tabHeader, _tabContent,
         _tabId = _formId + '-tab-',
         _header, _title, _body, _form, _footer;
+    var dialogIndex = 10000;
+
 
     //properties
     this.elem = _elem;
@@ -63,13 +65,24 @@ function Form(elem, option) {
             }
         }
 
+        if (_elem.hasClass('form-card')) {
+            $('<div class="mask">').attr('id', _formId + 'Mask').css({ zIndex: dialogIndex }).appendTo($('body'));
+            var width = _option.width || 800;
+            var height = _option.height || 400;
+            _elem.css({
+                zIndex: dialogIndex + 1,
+                width: width + 'px', height: height + 'px',
+                marginTop: -(height / 2) + 'px', marginLeft: -(width / 2) + 'px'
+            });
+        }
+
         _elem.removeClass('collapse');
         _elem.show();
     }
 
     this.close = function () {
         if (_opened) {
-            _elem.hide();
+            _close();
         }
     }
 
@@ -300,7 +313,7 @@ function Form(elem, option) {
 
     function _initFormElement() {
         if (_option.card) {
-            _elem.addClass('form-card');
+            _elem.addClass('form-card form-dialog');
         } else if (_option.info) {
             _elem.addClass('form-info');
         }
@@ -484,23 +497,72 @@ function Form(elem, option) {
 
     function _createHeadToolbar(container) {
         var toolbar = $('<div class="right-toolbar">').appendTo(container);
-        $('<i class="fa fa-chevron-up">')
-            .appendTo(toolbar)
-            .click(function () {
-                if (_elem.hasClass('collapse')) {
-                    _elem.removeClass('collapse');
-                    $(this).removeClass('fa-chevron-down').addClass('fa-chevron-up')
-                } else {
-                    _elem.addClass('collapse');
-                    $(this).removeClass('fa-chevron-up').addClass('fa-chevron-down');
-                }
+        var div = {};
+        function setHeadMouseEvent(header) {
+            header.mousedown(function (e) {
+                e.preventDefault();
+                div.move = true;
+                div.offset = [
+                    e.clientX - parseFloat(_elem.css('left')),
+                    e.clientY - parseFloat(_elem.css('top'))
+                ];
             });
+            $(document).mousemove(function (e) {
+                e.preventDefault();
+                if (div.move) {
+                    var left = e.clientX - div.offset[0];
+                    var top = e.clientY - div.offset[1];
+                    _elem.css({ left: left, top: top });
+                }
+            }).mouseup(function () {
+                delete div.move;
+            });
+        }
+
+        if (!_elem.hasClass('form-dialog')) {
+            $('<i class="fa fa-chevron-up">')
+                .appendTo(toolbar)
+                .click(function () {
+                    if (_elem.hasClass('collapse')) {
+                        _elem.removeClass('collapse');
+                        $(this).removeClass('fa-chevron-down').addClass('fa-chevron-up')
+                    } else {
+                        _elem.addClass('collapse');
+                        $(this).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+                    }
+                });
+        } else {
+            $('<i class="fa fa-window-maximize">')
+                .css({ fontSize: '12px' })
+                .data('isMax', false)
+                .appendTo(toolbar)
+                .click(function () {
+                    if ($(this).data('isMax')) {
+                        $(this).data('isMax', false)
+                            .removeClass('fa-window-restore')
+                            .addClass('fa-window-maximize');
+                        _elem.removeClass('form-dialog-max').attr('style', $(this).data('layerStyle'));
+                    } else {
+                        $(this).data('isMax', true)
+                            .data('layerStyle', _elem.attr('style'))
+                            .removeClass('fa-window-maximize')
+                            .addClass('fa-window-restore');
+                        _elem.addClass('form-dialog-max').attr('style', '').css({ zIndex: dialogIndex + 1 });
+                    }
+                });
+
+            setHeadMouseEvent(container);
+        }
+
         $('<i class="fa fa-close">')
             .appendTo(toolbar)
-            .click(function () {
-                _elem.hide();
-                _option.onClose && _option.onClose();
-            });
+            .click(_close);
+    }
+
+    function _close() {
+        $('#' + _formId + 'Mask').remove();
+        _elem.hide();
+        _option.onClose && _option.onClose();
     }
 }
 

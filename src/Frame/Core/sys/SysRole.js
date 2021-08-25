@@ -17,7 +17,7 @@
             { title: Language.Note, field: 'Note', type: 'textarea' }
         ],
         formOption: {
-            style: 'form-block',
+            style: 'form-block', width: 600, height: 300,
             data: { Id: '', Enabled: 1 }
         },
         gridOption: {

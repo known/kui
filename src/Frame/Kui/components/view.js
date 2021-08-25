@@ -35,7 +35,7 @@ function View(name, option) {
         _grid.render().appendTo(view);
 
         if (_form) {
-            _form.render().appendTo(elem);
+            _form.render().appendTo($('body'));
         }
 
         return elem;

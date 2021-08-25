@@ -76,6 +76,7 @@ function DevModule() {
             tree.reload();
         },
         formOption: {
+            width: 980, height: 350,
             titleInfo: function (d) {
                 return d.ParentName ? '- ' + d.ParentName : '';
             }

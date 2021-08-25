@@ -36,7 +36,7 @@ function SysOrganization() {
             view.setGridData([]);
         },
         formOption: {
-            style: 'form-block',
+            style: 'form-block', width: 600, height: 300,
             titleInfo: function (d) {
                 var item = tree.getNodeData(function (l) { return l.id === d.ParentId; });
                 return item ? '- ' + item.Code + '|' + item.Name : '';
