@@ -391,7 +391,7 @@ function Grid(name, option) {
             }).appendTo(td);
         }
         if (columnButtons.length > 0 && !option.isTradition) {
-            var td = $('<td class="center btns">').appendTo(tr);
+            var td = $('<td class="center btns">').data(rowDataName, row).appendTo(tr);
             _initGridToolbar(td);
         }
         for (var i = 0; i < _dataColumns.length; i++) {
@@ -777,10 +777,11 @@ function Grid(name, option) {
     function _initGridToolbar(td) {
         var opt = {
             buttons: columnButtons,
+            toolbar: option.toolbar,
             isGridCell: true,
-            onlyIcon: true,
+            onlyIcon: option.isIconButton,
             gridParameter: function () {
-                var rows = _this.getSelected();
+                var rows = [td.data(rowDataName)];
                 return new GridManager(_this, option.form, rows);
             }
         };

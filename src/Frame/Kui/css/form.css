@@ -86,6 +86,7 @@ button:before {margin-right:3px;}
 .form-label {display:inline-block;float:left;width:110px;padding:5px 10px;text-align:right;}
 .form-input {display:inline-block;position:relative;}
 .form-button {margin-left:130px;margin-bottom:15px;}
+.form-unit {position:absolute;top:5px;right:5px;}
 .form-tips {display:inline-block;padding-left:5px;height:30px;line-height:30px;color:#aaa;}
 .form-input input[type="text"], .form-input input[type="password"], .form-input select {width:180px;}
 .form-input .icon {position:absolute;top:8px;right:5px;cursor:pointer;}
@@ -104,6 +105,10 @@ button:before {margin-right:3px;}
 .form-block .form-item, .form-item.block {width:100%;}
 .block input[type="text"], .block textarea, .block select {width:100%;}
 .block .form-input, .form-input.block {display:block;margin-left:130px;margin-right:10px;}
+.form4 .form-label {width:90px;}
+.form4 .block .form-input, 
+.form4 .form-input.block,
+.form4 .form-button {margin-left:110px;}
 
 /*form-table*/
 .form-table {width:80%;margin:0 auto;position:relative;background-color:#fff;padding-bottom:50px;}

@@ -37,7 +37,8 @@
 .grid th.asc .fa-caret-down {color:#aaa;}
 .grid th.desc .fa-caret-up {color:#aaa;}
 .grid th.desc .fa-caret-down {color:#000;}
-
+.grid .btns i, .grid .btns span {color:#00f;cursor:pointer;}
+.grid .btns span {margin:0 3px;}
 .grid-search {display:inline-block;position:relative;}
 .grid-search-adv {
     float:right;margin:0 -10px 0 10px;width:35px;height:28px;line-height:28px;cursor:pointer;
@@ -47,8 +48,6 @@
     position:absolute;top:1px;right:1px;padding:4px;
     width:26px;height:26px;border-left:1px solid #e2e2e2;cursor:pointer;
 }
-
-.grid .btns i {color:#00f;cursor:pointer;}
 
 /*page*/
 .pager {height:30px;line-height:30px;text-align:right;background-color:#fff;border-top:1px solid #d6d6d6;}

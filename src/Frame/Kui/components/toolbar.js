@@ -80,7 +80,14 @@ function Toolbar(option) {
     }
 
     function _createButton(container, btn, target) {
-        target = target || (_option.onlyIcon ? '<i>' : '<button>');
+        if (!target) {
+            if (_option.isGridCell) {
+                target = _option.onlyIcon ? '<i>' : '<span>';
+            } else {
+                target = _option.onlyIcon ? '<i>' : '<button>';
+            }
+        }
+
         var obj = $(target)
             .data('item', btn)
             .on('click', function () {
@@ -95,9 +102,11 @@ function Toolbar(option) {
             .appendTo(container);
         if (_option.onlyIcon) {
             obj.addClass(btn.icon).attr('title', btn.name);
+        } else if (_option.isGridCell) {
+            obj.append(btn.name);
         } else {
             obj.append('<i class="' + btn.icon + '">')
-               .append('<span>' + btn.name + '</span>');
+                .append('<span>' + btn.name + '</span>');
         }
     }
 }

@@ -81,7 +81,7 @@ function DevModule() {
             }
         },
         gridOption: {
-            url: '', page: false,
+            url: '', page: false, isTradition: true,
             toolbar: {
                 addSys: function (e) {
                     e.addRow({
