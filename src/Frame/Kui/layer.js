@@ -94,6 +94,26 @@ var Layer = {
             }
         };
 
+        function createMaximizeIcon(container) {
+            $('<i class="fa fa-window-maximize maximize">')
+                .data('isMax', false)
+                .appendTo(container)
+                .click(function () {
+                    if ($(this).data('isMax')) {
+                        $(this).data('isMax', false)
+                            .removeClass('fa-window-restore')
+                            .addClass('fa-window-maximize');
+                        layer.removeClass('dialog-max').attr('style', $(this).data('layerStyle'));
+                    } else {
+                        $(this).data('isMax', true)
+                            .data('layerStyle', layer.attr('style'))
+                            .removeClass('fa-window-maximize')
+                            .addClass('fa-window-restore');
+                        layer.addClass('dialog-max').attr('style', '').css({ zIndex: index + 1 });
+                    }
+                });
+        }
+
         function createCloseIcon(container) {
             $('<i class="fa fa-close close">')
                 .appendTo(container)
@@ -188,6 +208,7 @@ var Layer = {
                     .append('<i class="icon ' + icon + '">')
                     .append(option.title);
                 setHeadMouseEvent(header);
+                createMaximizeIcon(header);
                 createCloseIcon(header);
                 content.append(header);
             } else if (option.showClose) {
