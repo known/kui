@@ -9,6 +9,7 @@ var Layer = {
     },
 
     open: function (option) {
+        option.showMax = option.showMax === undefined ? true : option.showMax;
         return this._show('dialog', option);
     },
 
@@ -54,7 +55,8 @@ var Layer = {
 
     alert: function (message, callback) {
         var height = 150 - 42 - 42 - 10;
-        var dlg = this.open({
+        var dlg = this._show('dialog', {
+            showMax: false,
             icon: 'fa fa-info-circle', title: Language.Tips, width: 300, height: 150,
             content: '<div style="text-align:center;height:' + height + 'px"><div style="padding-top:15px;">' + message + '</div></div>',
             footer: '<button class="ok">' + Language.OK + '</button>'
@@ -67,7 +69,8 @@ var Layer = {
 
     confirm: function (message, callback) {
         var height = 150 - 42 - 42 - 10;
-        var dlg = this.open({
+        var dlg = this._show('dialog', {
+            showMax: false,
             icon: 'fa fa-question-circle', title: Language.Confirm, width: 300, height: 150,
             content: '<div style="text-align:center;height:' + height + 'px"><div style="padding-top:15px;">' + message + '</div></div>',
             footer: '<button class="ok">' + Language.OK + '</button><span style="width:20px;display:inline-block;"></span><button class="cancel">' + Language.Cancel + '</button>'
@@ -208,7 +211,9 @@ var Layer = {
                     .append('<i class="icon ' + icon + '">')
                     .append(option.title);
                 setHeadMouseEvent(header);
-                createMaximizeIcon(header);
+                if (option.showMax) {
+                    createMaximizeIcon(header);
+                }
                 createCloseIcon(header);
                 content.append(header);
             } else if (option.showClose) {
