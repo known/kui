@@ -25,9 +25,12 @@ function Grid(name, option) {
         _columnLength = 0, _dataColumns = [];
     var thead, tbody, page;
     var toolButtons = option.toolButtons || [];
-    var columnButtons = toolButtons.filter(function (d) { return d.target && d.target.indexOf('grid') >= 0 });
+    var columnButtons = toolButtons.filter(function (d) {
+        return d === 'edit' || d === 'remove' || d.target && d.target.indexOf('grid') >= 0;
+    });
     var _checkBox = option.showCheckBox || (!isImport && toolButtons.length > 0);
     var _multiSelect = option.multiSelect === undefined ? true : option.multiSelect;
+    var _isDetail = false;
 
     var sort = {};
     if (option.sortField) {
@@ -73,6 +76,8 @@ function Grid(name, option) {
     }
 
     this.setDetail = function (isDetail) {
+        _isDetail = isDetail;
+
         if (_toolbar) {
             if (isDetail) {
                 _toolbar.elem.hide();
@@ -84,9 +89,15 @@ function Grid(name, option) {
         if (_query) {
             if (isDetail) {
                 _query.elem.removeClass('hide').css({ paddingTop: '5px' });
-            } else {
+            } else if (option.isTradition) {
                 _query.elem.addClass('hide');
             }
+        }
+
+        if (isDetail) {
+            _elem.find('th.check,th.tb-head').hide();
+        } else {
+            _elem.find('th.check,th.tb-head').show();
         }
 
         _setGridTop();
@@ -137,7 +148,7 @@ function Grid(name, option) {
 
             var head = getColumnHead(column);
             var th = $('<th>').append(head).appendTo(thead);
-            
+
             if (column.width) {
                 th.css({ width: column.width });
             }
@@ -377,7 +388,7 @@ function Grid(name, option) {
         if (index) {
             tr.append('<td class="center">' + (idx + 1) + '</td>');
         }
-        if (_checkBox) {
+        if (_checkBox && !_isDetail) {
             var td = $('<td class="center checkbox">').appendTo(tr);
             var chkHtml = _multiSelect
                 ? '<input type="checkbox">'
@@ -390,7 +401,7 @@ function Grid(name, option) {
                 }
             }).appendTo(td);
         }
-        if (columnButtons.length > 0 && !option.isTradition) {
+        if (columnButtons.length > 0 && !option.isTradition && !_isDetail) {
             var td = $('<td class="center btns">').data(rowDataName, row).appendTo(tr);
             _initGridToolbar(td);
         }
@@ -666,6 +677,7 @@ function Grid(name, option) {
     }
 
     function _init() {
+        _isDetail = false;
         if (option.width) {
             _elem.css({ width: option.width });
         }
@@ -753,7 +765,7 @@ function Grid(name, option) {
             buttons: toolButtons,
             toolbar: option.toolbar,
             toolbarTips: option.toolbarTips,
-            isTradition: option.isTradition,
+            isTradition: !querys.length || option.isTradition,
             gridParameter: function () {
                 var rows = _this.getSelected();
                 return new GridManager(_this, option.form, rows);
