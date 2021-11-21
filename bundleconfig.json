@@ -2,126 +2,26 @@
   {
     "outputFileName": "static/js/lang/zh-CN.min.js",
     "inputFiles": [
-      "src/Frame/Lang/zhCN.js"
+      "src/langs/zhCN.js"
     ]
   },
   {
     "outputFileName": "static/js/lang/en.min.js",
     "inputFiles": [
-      "src/Frame/Lang/en.js"
-    ]
-  },
-  //Frame
-  {
-    "outputFileName": "static/css/login.min.css",
-    "inputFiles": [
-      "src/Frame/Kui/login.css"
-    ]
-  },
-  {
-    "outputFileName": "static/js/login.min.js",
-    "inputFiles": [
-      "src/config.js",
-      "src/Frame/Kui/login.js"
-    ]
-  },
-  {
-    "outputFileName": "static/css/app.min.css",
-    "inputFiles": [
-      "src/Frame/App/app.css",
-      "src/Frame/Kui/layer.css"
-    ]
-  },
-  {
-    "outputFileName": "static/js/app.min.js",
-    "inputFiles": [
-      "src/config.js",
-      "src/common.js",
-      "src/Frame/Kui/layer.js",
-      "src/Frame/Kui/components/chart.js",
-      "src/Frame/App/components/*.js",
-      "src/Frame/App/app.js"
-    ]
-  },
-  {
-    "outputFileName": "static/css/index.min.css",
-    "inputFiles": [
-      "src/common.css",
-      "src/Frame/Kui/css/form.css",
-      "src/Frame/Kui/layer.css",
-      "src/Frame/Kui/admin.css"
-    ]
-  },
-  {
-    "outputFileName": "static/js/index.min.js",
-    "inputFiles": [
-      "src/config.js",
-      "src/common.js",
-      "src/Frame/Kui/components/form/*.js",
-      "src/Frame/Kui/layer.js",
-      "src/Frame/Kui/admin.js"
+      "src/langs/en.js"
     ]
   },
   {
     "outputFileName": "static/css/kui.min.css",
     "inputFiles": [
-      "src/common.css",
-      "src/Frame/Kui/layer.css",
-      "src/Frame/Kui/css/*.css"
+      "src/kui.css"
     ]
   },
   {
     "outputFileName": "static/js/kui.min.js",
     "inputFiles": [
-      "src/config.js",
-      "src/common.js",
-      "src/Frame/Kui/layer.js",
-      "src/Frame/Kui/components/form/*.js",
-      "src/Frame/Kui/components/grid/*.js",
-      "src/Frame/Kui/components/*.js",
-      "src/Frame/Kui/kui.js"
-    ]
-  },
-  {
-    "outputFileName": "static/js/biz.min.js",
-    "inputFiles": [
-      "src/Frame/Core/biz/*.js"
-    ]
-  },
-  {
-    "outputFileName": "static/js/sys.min.js",
-    "inputFiles": [
-      "src/Frame/Core/sys/*.js",
-      "src/Frame/Core/Dashboard.js"
-    ]
-  },
-  //DEV
-  {
-    "outputFileName": "static/dev/app.min.css",
-    "inputFiles": [
-      "src/Dev/app.css"
-    ]
-  },
-  {
-    "outputFileName": "static/dev/app.min.js",
-    "inputFiles": [
-      "src/Dev/func.js",
-      "src/Dev/apps/*.js",
-      "src/Dev/app.js"
-    ]
-  },
-  {
-    "outputFileName": "static/dev/page.min.css",
-    "inputFiles": [
-      "src/Dev/page.css"
-    ]
-  },
-  {
-    "outputFileName": "static/dev/page.min.js",
-    "inputFiles": [
-      "src/Dev/func.js",
-      "src/Dev/page.js",
-      "src/Dev/pages/*.js"
+      "src/components/*.js",
+      "src/kui.js"
     ]
   }
 ]

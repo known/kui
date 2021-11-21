@@ -7,67 +7,12 @@
     <title>KUI</title>
     <base href="/">
     <link rel="stylesheet" href="/static/css/font-awesome.css">
-    <link rel="stylesheet" href="/static/css/index.min.css">
+    <link rel="stylesheet" href="/static/css/kui.min.css">
 </head>
 <body>
-    <div class="loader"><div class="loader-inner"></div></div>
-    <div class="layout-admin">
-        <div class="layout-header">
-            <span class="logo left">KUI</span>
-            <ul id="topMenu" class="nav left"></ul>
-            <ul id="topRight" class="nav right">
-                <li class="nav-item top-right" action="refresh">
-                    <i class="fa fa-refresh"></i>
-                </li>
-                <li class="nav-item top-right" action="share" style="display:none;">
-                    <i class="fa fa-share-alt"></i>
-                </li>
-                <li class="nav-item top-right" action="feedback">
-                    <i class="fa fa-commenting-o"></i>
-                </li>
-                <li class="nav-item top-right" action="fullScreen">
-                    <i class="fa fa-arrows-alt"></i>
-                </li>
-                <li class="nav-item top-right" action="shortcut" style="display:none;">
-                    <i class="fa fa-external-link"></i>
-                </li>
-                <li class="nav-item top-right site" action="site" style="display:none;">
-                    <i class="fa fa-gears"></i>
-                </li>
-                <li class="nav-item dropdown">
-                    <div class="nav-title title">
-                        <img id="userAvatar" src="/static/img/face1.png" alt="Avatar">
-                        <span id="userName"></span>
-                        <i class="fa fa-caret-down arrow"></i>
-                    </div>
-                    <dl class="nav-child child">
-                        <dd class="top-right" action="userInfo">
-                            <i class="fa fa-user"></i> <span id="UserCenter"></span>
-                        </dd>
-                        <dd class="top-right" action="logout">
-                            <i class="fa fa-power-off"></i> <span id="SafeLogout"></span>
-                        </dd>
-                    </dl>
-                </li>
-            </ul>
-        </div>
-        <div class="layout-side">
-            <div class="toggleMenu">
-                <i class="fa fa-dedent" action="toggle"></i>
-            </div>
-            <div class="layout-scroll">
-                <ul id="leftMenu" class="nav-tree"></ul>
-            </div>
-        </div>
-        <div class="layout-nav">
-            <div class="tabs-header"></div>
-            <div class="fa fa-question-circle-o help" action="help"></div>
-        </div>
-        <div class="layout-body"></div>
-        <div class="layout-footer"><span id="TechSupport"></span>：<a href="@Config.SupportUrl" target="_blank">@Config.SupportName</a></div>
-    </div>
+    <div id="app"></div>
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/lang/zh-CN.min.js"></script>
-    <script src="/static/js/index.min.js"></script>
+    <script src="/static/js/kui.min.js"></script>
 </body>
 </html>
