@@ -60,7 +60,7 @@
     <Content Include="docs\ui\Tree.html" />
     <Content Include="docs\ui\View.html" />
     <Content Include="index.html" />
-    <Content Include="src\components\Home.js" />
+    <Content Include="src\components\Admin.js" />
     <Content Include="src\components\Form.js" />
     <Content Include="src\components\Input.js" />
     <Content Include="src\components\Button.js" />

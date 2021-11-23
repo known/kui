@@ -3,6 +3,7 @@ html, body, button {
     font-family:'Microsoft YaHei', Arial, Verdana, sans-serif;
     font-size:14px;
 }
+html, body, #app {width:100%;height:100%;}
 a {text-decoration:none;}
 table {border-collapse:collapse;width:100%;}
 ul {list-style:none;}
@@ -31,5 +32,16 @@ button:hover {opacity:0.8;filter:alpha(opacity=80);}
 .required:before {content:'*';color:#f00;padding-right:2px;}
 
 /*Login*/
-.login {width:300px;text-align:center;margin:200px auto 0 auto;}
+.login {width:300px;text-align:center;margin:0 auto;}
 .login .form-item {width:100%;}
+
+/*admin*/
+.layout-header {position:absolute;top:0;left:0;right:0;height:40px;}
+.layout-scroll {position:absolute;top:30px;left:0;bottom:0;width:180px;overflow-x:hidden;}
+.layout-side {position:absolute;top:40px;left:0;bottom:0;width:160px;overflow:hidden;}
+.layout-body {position:absolute;top:40px;left:160px;right:0;bottom:0;overflow:hidden;}
+.layout-header h1 {display:inline-block;padding-left:10px;}
+
+/*style dark*/
+.dark .layout-header {background-color:#03173D;color:#ddd;}
+.dark .layout-side {background-color:#393D49;color:#ddd;}

@@ -1,4 +1,4 @@
-function Login() {
+function Login(config) {
     //fields
     var form = new Form({
         fields: [
@@ -13,7 +13,8 @@ function Login() {
     //methods
     this.render = function (dom) {
         var box = $('<div>').addClass('login').appendTo(dom);
-        $('<h1>').html(Language.UserLogin).appendTo(box);
+        $('<h1>').html(config.AppName).appendTo(box);
+        $('<h2>').html(Language.UserLogin).appendTo(box);
         form.render(box);
     }
 
@@ -26,6 +27,6 @@ function Login() {
         var user = {
             UserName: data.UserName
         };
-        app.home(user);
+        app.admin(user);
     }
 }

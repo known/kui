@@ -23,9 +23,9 @@ function App(id, config) {
         _route(item);
     }
 
-    this.home = function (user) {
+    this.admin = function (user) {
         _setUser(user);
-        _showHome();
+        _showAdmin();
     }
 
     this.login = function () {
@@ -44,11 +44,11 @@ function App(id, config) {
     }
 
     function _showLogin() {
-        _route({ component: new Login() });
+        _route({ component: new Login(config) });
     }
 
-    function _showHome() {
-        _route({ component: new Home() });
+    function _showAdmin() {
+        _route({ component: new Admin() });
     }
 
     const Key_User = 'Known_User';
@@ -58,7 +58,11 @@ function App(id, config) {
         if (!value || value === 'undefined')
             return null;
 
-        return JSON.parse(value);
+        var user = JSON.parse(value);
+        if (!user.AppName) {
+            user.AppName = config.AppName;
+        }
+        return user;
     }
 
     function _setUser(user) {
@@ -69,11 +73,13 @@ function App(id, config) {
         }
     }
 
-    _showHome();
+    _showAdmin();
 }
 
 function log(obj) {
     console.log(obj);
 }
 
-var app = new App('app', {});
+var app = new App('app', {
+    AppName: 'Known UI'
+});
