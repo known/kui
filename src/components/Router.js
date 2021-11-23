@@ -11,12 +11,8 @@ function Router(elem, option) {
             return;
 
         _destroyComponent();
-
-        if (!item.previous) {
-            item.previous = _current;
-        }
-        _current = item;
-
+        _setCurrent(item);
+        
         var component = item.component;
         if (component) {
             _renderComponent(component);
@@ -32,6 +28,13 @@ function Router(elem, option) {
     function _destroyComponent() {
         var currComp = _current.component;
         currComp && currComp.destroy && currComp.destroy();
+    }
+
+    function _setCurrent(item) {
+        if (!item.previous) {
+            item.previous = _current;
+        }
+        _current = item;
     }
 
     function _renderComponent(component) {
