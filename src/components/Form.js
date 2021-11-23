@@ -44,17 +44,17 @@ function Form(option) {
         if (_option.style)
             dom.addClass(_option.style);
 
-        _createFields(dom);
+        _createColumns(dom);
         _createButtons(dom);
     }
 
-    function _createFields(dom) {
-        var fields = _option.fields;
-        if (!fields || !fields.length)
+    function _createColumns(dom) {
+        var columns = _option.columns;
+        if (!columns || !columns.length)
             return;
 
-        for (var i = 0; i < fields.length; i++) {
-            _createFormItem(dom, fields[i]);
+        for (var i = 0; i < columns.length; i++) {
+            _createFormItem(dom, columns[i]);
         }
     }
 

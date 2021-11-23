@@ -1,7 +1,7 @@
 function Login(config) {
     //fields
     var form = new Form({
-        fields: [
+        columns: [
             { field: 'UserName', type: 'text', icon: 'fa fa-user', placeholder: Language.UserName, required: true },
             { field: 'Password', type: 'password', icon: 'fa fa-lock', placeholder: Language.Password, required: true }
         ],
