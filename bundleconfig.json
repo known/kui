@@ -21,7 +21,8 @@
     "outputFileName": "static/js/kui.min.js",
     "inputFiles": [
       "src/components/*.js",
-      "src/kui.js"
+      "src/kui.js",
+      "src/app.js"
     ]
   }
 ]

@@ -10,8 +10,7 @@ function Router(elem, option) {
         if (!_option.before(item))
             return;
 
-        var currComp = _current.component;
-        currComp && currComp.destroy && currComp.destroy();
+        _destroyComponent();
 
         if (!item.previous) {
             item.previous = _current;
@@ -20,20 +19,34 @@ function Router(elem, option) {
 
         var component = item.component;
         if (component) {
-            if (typeof component === 'string') {
-                _elem.html(component);
-            } else {
-                _elem.html('');
-                component.render(_elem);
-            }
-            setTimeout(function () {
-                _option.after && _option.after(item);
-                component.mounted && component.mounted();
-            }, 10);
+            _renderComponent(component);
+            _mountComponent(item, component);
         }
     }
 
     this.back = function () {
         _this.route(_current.previous);
+    }
+
+    //private
+    function _destroyComponent() {
+        var currComp = _current.component;
+        currComp && currComp.destroy && currComp.destroy();
+    }
+
+    function _renderComponent(component) {
+        if (typeof component === 'string') {
+            _elem.html(component);
+        } else {
+            _elem.html('');
+            component.render(_elem);
+        }
+    }
+
+    function _mountComponent(item, component) {
+        setTimeout(function () {
+            _option.after && _option.after(item);
+            component.mounted && component.mounted();
+        }, 10);
     }
 }

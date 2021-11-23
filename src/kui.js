@@ -79,7 +79,3 @@ function App(id, config) {
 function log(obj) {
     console.log(obj);
 }
-
-var app = new App('app', {
-    AppName: 'Known UI'
-});

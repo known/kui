@@ -65,6 +65,7 @@
     <Content Include="src\components\Input.js" />
     <Content Include="src\components\Button.js" />
     <Content Include="src\components\Login.js" />
+    <Content Include="src\app.js" />
     <Content Include="src\langs\en.js" />
     <Content Include="src\langs\zhCN.js" />
     <Content Include="src\components\Router.js" />
