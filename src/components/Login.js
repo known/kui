@@ -16,6 +16,7 @@ function Login(config) {
         $('<h1>').html(config.AppName).appendTo(box);
         $('<h2>').html(Language.UserLogin).appendTo(box);
         form.render(box);
+        $('<div>').addClass('copyright').html('&copy;2021 Known').appendTo(dom);
     }
 
     //private

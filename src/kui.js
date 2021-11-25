@@ -5,7 +5,7 @@ function App(id, config) {
             before: function (item) {
                 var component = item.component;
                 if (!(component instanceof Login) && !component.user) {
-                    _showLogin()
+                    _showLogin();
                     return false;
                 }
                 return true;
